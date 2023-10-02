@@ -1,0 +1,9 @@
+<PropertyGroup name='Group 1' id='d6f7f615-e3eb-447b-a649-c54710ae843f' description='Description for Group 1'>,,,,,
+<Category>,<PropertyLookup>,<Value>,,,
+{FileGlobals},Hardware {Container},,,,
+{FileGlobals},Hardware.TCU {LabVIEWIOControl},DeviceName {String},SessionNumber {Number},,
+{FileGlobals},{ContainerValues},ASRL5::INSTR,0,,
+{FileGlobals},DataTransfer {Container},ServerPath {String},domain {String},user {String},password {String}
+{FileGlobals},{ContainerValues},\\mco3-fs10.luminartech.com\Workgroups\iris-calib-captures\000_BSample\,,,
+{FileGlobals},test_profile_path {Path},C:\luminartech\P11.7_GrayWall\cfg\TestProfie_GrayWall_SV2.csv,,,
+<PropertyGroup>,,,,,

@@ -1,0 +1,60 @@
+
+
+
+active
+
+H2->Datapath: FifoToPp is ready
+Magic keywords match: 0x2432
+Magic keywords match: 0x2432
+Read misc calibration from EEPROM
+Peripheral Bridge Initialized
+Board ID is 1
+This board is B Sample Production
+Lasers Locked
+Laser Disabled
+Setting up roic registers for serdes
+Release roic reset ...
+ROIC ID is 705
+ROIC chip version is 0.
+ROIC chip subversion is 0.
+705 Detected. Bringing up ROIC.
+Magic keywords match: 0x2432
+hv_off_705: finished
+roic bringup: finished
+Magic keywords match: 0x2432
+Magic keywords match: 0x2432
+compression init finished
+Magic keywords match: 0x2432
+Magic keywords match: 0x2432
+Read Eclipse calibration from EEPROM
+sin(el_gamma): 0.004900
+cos(el_gamma): 0.999988
+Gamma updated successfully
+
+sin(el_gamma): -0.004900
+cos(el_gamma): 0.999988
+Gamma updated successfully
+
+Az Offset for pixel 0 updated successfully
+
+Az Offset for pixel 1 updated successfully
+
+EL Polynomial updated successfully
+
+Tab 0 offset to 0.000000
+
+Tab 1 offset to 0.000000
+
+Tab 2 offs
+
+
+
+
+ver
+Hydra AUTOSAR program.
+Built Jul  8 2021  13:38:27
+git hash=762032c4 on 2021-07-08 09:14:27 -0400
+git describe=v6.0.0-rc7-0-g762032c40be0
+
+H2->
+

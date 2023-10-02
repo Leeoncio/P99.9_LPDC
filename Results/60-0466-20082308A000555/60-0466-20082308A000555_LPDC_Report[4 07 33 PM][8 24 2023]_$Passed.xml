@@ -1,0 +1,3247 @@
+<?xml version="1.0" encoding="iso-8859-1" ?><?xml-stylesheet type="text/xsl" href="C:\Program Files\National Instruments\TestStand 2017\Components\Models\TestStandModels\ATML\StyleSheets\tr6_horizontal.xsl"?>
+
+<trc:TestResultsCollection xmlns:trc="urn:IEEE-1636.1:2013:TestResultsCollection" xmlns:tr="urn:IEEE-1636.1:2013:TestResults" xmlns:c="urn:IEEE-1671:2010:Common" xmlns:sc="urn:IEEE-1636.99:2013:SimicaCommon" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ts="www.ni.com/TestStand/ATMLTestResults/3.0">
+<trc:TestResults uuid="6244cf43-42ba-11ee-827a-be3af2b6059f" xmlns:trc="urn:IEEE-1636.1:2013:TestResultsCollection" xmlns:tr="urn:IEEE-1636.1:2013:TestResults" xmlns:c="urn:IEEE-1671:2010:Common" xmlns:sc="urn:IEEE-1636.99:2013:SimicaCommon" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ts="www.ni.com/TestStand/ATMLTestResults/3.0">
+	<tr:Personnel>
+		<tr:SystemOperator ID = "administrator" name = "administrator"/>
+	</tr:Personnel>
+	<tr:ResultSet ID="252" name = "C:\luminartech\P99.9_LPDC\LPDC.seq#MainSequence" startDateTime = "2023-08-24T16:07:33.321" endDateTime = "2023-08-24T16:11:18.463">
+		<tr:Extension>
+			<ts:TSStepProperties>
+				<ts:StepType>SequenceCall</ts:StepType>
+				<ts:StepGroup>Main</ts:StepGroup>
+				<ts:BlockLevel value='1'/>
+				<ts:Index value='10'/>
+				<ts:TotalTime value='225.142'/>
+				<ts:ModuleTime value='225.142'/>
+			</ts:TSStepProperties>
+		</tr:Extension>
+		<tr:Outcome value="Passed" />
+		<tr:Test name="UDP_KeepAwake" ID="253" testReferenceID="ID#:2jM+Uk5A7hGCBTzp90RNgB" startDateTime = "2023-08-24T16:07:33.397"  endDateTime = "2023-08-24T16:07:33.398" >
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>SequenceCall</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='2'/>
+					<ts:TotalTime value='0.000399'/>
+					<ts:ModuleTime value='0.0001397'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value="Passed" qualifier="Done" />
+		</tr:Test>
+		<tr:Test name="UUT_info" ID="255" testReferenceID="ID#:GNOvI1BA7hGCBTzp90RNgB" startDateTime = "2023-08-24T16:07:33.398"  endDateTime = "2023-08-24T16:07:33.488" >
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>SequenceCall</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='3'/>
+					<ts:TotalTime value='0.0899358'/>
+					<ts:ModuleTime value='0.0895922'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value="Passed" />
+		</tr:Test>
+		<tr:Test name="MES Setup" ID="256" testReferenceID="ID#:DNYHhFpA7hGCBTzp90RNgB" startDateTime = "2023-08-24T16:07:33.513"  endDateTime = "2023-08-24T16:07:33.673" >
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>SequenceCall</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='4'/>
+					<ts:TotalTime value='0.159919'/>
+					<ts:ModuleTime value='0.159609'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value="Passed" />
+		</tr:Test>
+		<tr:Test name="Get Power Supply" ID="258" testReferenceID="ID#:SiqHn11A7hGCBTzp90RNgB" startDateTime = "2023-08-24T16:07:33.696"  endDateTime = "2023-08-24T16:07:33.764" >
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>SequenceCall</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='0.0675437'/>
+					<ts:ModuleTime value='0.0673282'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value="Passed" />
+		</tr:Test>
+		<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#Enable_TCU" ID="259" callerName='Enable_TCU' testReferenceID="ID#:4scG7l1A7hGCBTzp90RNgB" startDateTime = "2023-08-24T16:07:33.780"  endDateTime = "2023-08-24T16:07:55.708" >
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='21.9286'/>
+					<ts:ModuleTime value='21.9281'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value="Passed" qualifier="Done" />
+			<tr:Test ID = "260" name = "TurnOn_PowerSupply" startDateTime = "2023-08-24T16:07:33.794"  endDateTime = "2023-08-24T16:07:34.045"  testReferenceID="ID#:6OFKwV1A7hGCBTzp90RNgB">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>PassFailTest</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='0'/>
+						<ts:TotalTime value='0.251113'/>
+						<ts:ModuleTime value='0.250549'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "Passed" />
+			</tr:Test>
+			<tr:SessionAction ID = "261" name = "Wait" startDateTime = "2023-08-24T16:07:34.045"  endDateTime = "2023-08-24T16:07:42.047"  testReferenceID="ID#:GVldaPlA7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>NI_Wait</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='1'/>
+						<ts:TotalTime value='8.00196'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:ActionOutcome value = "Done" />
+			</tr:SessionAction>
+			<tr:SessionAction ID = "262" name = "Enable TCU" startDateTime = "2023-08-24T16:07:42.048"  endDateTime = "2023-08-24T16:07:50.412"  testReferenceID="ID#:IyyuPPNA7hGt86ihWW6d9A">
+				<tr:Data>
+					<c:Collection>
+						<c:Item name = "ButtonHit">
+							<c:Datum value = "1" xsi:type="ts:TS_double" flags = "0x2000"/>
+						</c:Item>
+					</c:Collection>
+				</tr:Data>
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>MessagePopup</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='2'/>
+						<ts:TotalTime value='8.36422'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:ActionOutcome value = "Done" />
+			</tr:SessionAction>
+			<tr:SessionAction ID = "263" name = "Wait" startDateTime = "2023-08-24T16:07:50.413"  endDateTime = "2023-08-24T16:07:55.415"  testReferenceID="ID#:qixk6QBB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>NI_Wait</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='3'/>
+						<ts:TotalTime value='5.00137'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:ActionOutcome value = "Done" />
+			</tr:SessionAction>
+			<tr:Test ID = "264" name = "Enable_TCU" startDateTime = "2023-08-24T16:07:55.416"  endDateTime = "2023-08-24T16:07:55.416"  testReferenceID="ID#:6eFKwV1A7hGCBTzp90RNgB">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>PassFailTest</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='4'/>
+						<ts:TotalTime value='1.99e-05'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#Wait and validate Power" ID="265" callerName='STANDBY_CURRENT' testReferenceID="ID#:6uFKwV1A7hGCBTzp90RNgB" startDateTime = "2023-08-24T16:07:55.418"  endDateTime = "2023-08-24T16:07:55.700" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='5'/>
+						<ts:TotalTime value='0.281639'/>
+						<ts:ModuleTime value='0.281222'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="Passed" />
+				<tr:Test ID = "266" name = "STANDBY_CURRENT_1" startDateTime = "2023-08-24T16:07:55.698"  endDateTime = "2023-08-24T16:07:55.699"  testReferenceID="ID#:9sdNz11A7hGCBTzp90RNgB">
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>NumericLimitTest</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='7'/>
+							<ts:TotalTime value='0.0008905'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:Outcome value = "Passed" />
+					<tr:TestResult ID = "tr-6244cf36-42ba-11ee-827a-be3af2b6059f" name = "Numeric">
+						<tr:TestData>
+							<c:Datum value = "0.7023087" xsi:type="ts:TS_double" nonStandardUnit="A" flags = "0x2400"/>
+						</tr:TestData>
+						<tr:TestLimits>
+							<tr:Limits>
+								<c:LimitPair operator = "AND">
+									<c:Limit comparator = "GE">
+										<c:Datum nonStandardUnit = "A" value = "0.7" xsi:type="ts:TS_double" flags = "0x0000"/>
+									</c:Limit>
+									<c:Limit comparator = "LE">
+										<c:Datum nonStandardUnit = "A" value = "1.1" xsi:type="ts:TS_double" flags = "0x0000"/>
+									</c:Limit>
+								</c:LimitPair>
+								<c:Extension>
+									<ts:TSLimitProperties>
+										<ts:RawLimits>
+											<ts:Low value = "0.7" xsi:type="c:double" />
+											<ts:High value = "1.1" xsi:type="c:double" />
+										</ts:RawLimits>
+									</ts:TSLimitProperties>
+								</c:Extension>
+							</tr:Limits>
+						</tr:TestLimits>
+					</tr:TestResult>
+				</tr:Test>
+			</tr:TestGroup>
+		</tr:TestGroup>
+		<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#Init_Sensor" ID="268" callerName='Initialize_Sensor' testReferenceID="ID#:+eSGIl5A7hGCBTzp90RNgB" startDateTime = "2023-08-24T16:07:55.730"  endDateTime = "2023-08-24T16:08:15.264" >
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>SequenceCall</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='7'/>
+					<ts:TotalTime value='19.5337'/>
+					<ts:ModuleTime value='19.533'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value="Passed" />
+			<tr:SessionAction ID = "269" name = "Wait" startDateTime = "2023-08-24T16:07:55.739"  endDateTime = "2023-08-24T16:07:58.741"  testReferenceID="ID#:n8rKAF5A7hGCBTzp90RNgB">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>NI_Wait</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='0'/>
+						<ts:TotalTime value='3.00245'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:ActionOutcome value = "Done" />
+			</tr:SessionAction>
+			<tr:SessionAction ID = "270" name = "Open Communication x3" startDateTime = "2023-08-24T16:07:58.744"  endDateTime = "2023-08-24T16:08:05.558"  testReferenceID="ID#:oMrKAF5A7hGCBTzp90RNgB">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>Action</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='1'/>
+						<ts:TotalTime value='6.81386'/>
+						<ts:ModuleTime value='6.81261'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:ActionOutcome value = "Done" />
+			</tr:SessionAction>
+			<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#Activate_sensor" ID="271" callerName='Activate_sensor' testReferenceID="ID#:ocrKAF5A7hGCBTzp90RNgB" startDateTime = "2023-08-24T16:08:05.559"  endDateTime = "2023-08-24T16:08:15.253" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='2'/>
+						<ts:TotalTime value='9.69463'/>
+						<ts:ModuleTime value='9.69382'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="Passed" />
+				<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#Wait and validate Power" ID="272" callerName='Validate current value' testReferenceID="ID#:BGCkFF5A7hGCBTzp90RNgB" startDateTime = "2023-08-24T16:08:12.510"  endDateTime = "2023-08-24T16:08:14.949" >
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>SequenceCall</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='7'/>
+							<ts:TotalTime value='2.4394'/>
+							<ts:ModuleTime value='2.43898'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:Outcome value="Passed" />
+					<tr:Test ID = "273" name = "OPERATION_CURRENT_STANDBY" startDateTime = "2023-08-24T16:08:14.947"  endDateTime = "2023-08-24T16:08:14.948"  testReferenceID="ID#:9sdNz11A7hGCBTzp90RNgB">
+						<tr:Extension>
+							<ts:TSStepProperties>
+								<ts:StepType>NumericLimitTest</ts:StepType>
+								<ts:StepGroup>Main</ts:StepGroup>
+								<ts:BlockLevel value='0'/>
+								<ts:Index value='7'/>
+								<ts:TotalTime value='0.0008088'/>
+							</ts:TSStepProperties>
+						</tr:Extension>
+						<tr:Outcome value = "Passed" />
+						<tr:TestResult ID = "tr-6244cf37-42ba-11ee-827a-be3af2b6059f" name = "Numeric">
+							<tr:TestData>
+								<c:Datum value = "1.594037" xsi:type="ts:TS_double" nonStandardUnit="A" flags = "0x2400"/>
+							</tr:TestData>
+							<tr:TestLimits>
+								<tr:Limits>
+									<c:LimitPair operator = "AND">
+										<c:Limit comparator = "GE">
+											<c:Datum nonStandardUnit = "A" value = "1.5" xsi:type="ts:TS_double" flags = "0x0000"/>
+										</c:Limit>
+										<c:Limit comparator = "LE">
+											<c:Datum nonStandardUnit = "A" value = "2.4" xsi:type="ts:TS_double" flags = "0x0000"/>
+										</c:Limit>
+									</c:LimitPair>
+									<c:Extension>
+										<ts:TSLimitProperties>
+											<ts:RawLimits>
+												<ts:Low value = "1.5" xsi:type="c:double" />
+												<ts:High value = "2.4" xsi:type="c:double" />
+											</ts:RawLimits>
+										</ts:TSLimitProperties>
+									</c:Extension>
+								</tr:Limits>
+							</tr:TestLimits>
+						</tr:TestResult>
+					</tr:Test>
+				</tr:TestGroup>
+			</tr:TestGroup>
+		</tr:TestGroup>
+		<tr:SessionAction ID = "275" name = "Envision" startDateTime = "2023-08-24T16:08:15.288"  endDateTime = "2023-08-24T16:08:33.867"  testReferenceID="ID#:MU65WfNA7hGt86ihWW6d9A">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ButtonHit">
+						<c:Datum value = "1" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>MessagePopup</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='8'/>
+					<ts:TotalTime value='18.5791'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#Verify sensor" ID="276" callerName='Verify_sensor' testReferenceID="ID#:4InQVV5A7hGCBTzp90RNgB" startDateTime = "2023-08-24T16:08:33.868"  endDateTime = "2023-08-24T16:08:34.052" >
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>SequenceCall</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='9'/>
+					<ts:TotalTime value='0.184278'/>
+					<ts:ModuleTime value='0.183926'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value="Passed" />
+			<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#Verify FW" ID="277" callerName='Verify FW' testReferenceID="ID#:J1muXF5A7hGCBTzp90RNgB" startDateTime = "2023-08-24T16:08:33.899"  endDateTime = "2023-08-24T16:08:34.046" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='0'/>
+						<ts:TotalTime value='0.147379'/>
+						<ts:ModuleTime value='0.147103'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="Passed" />
+				<tr:SessionAction ID = "278" name = "HYDRA_VERSION" startDateTime = "2023-08-24T16:08:34.041"  endDateTime = "2023-08-24T16:08:34.042"  testReferenceID="ID#:WIh5ul5A7hGCBTzp90RNgB">
+					<tr:Data>
+						<c:Collection>
+							<c:Item name = "ReportText">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+									<c:Value>vertex-9.2.0-dev-rc3-932600-0-g2e377120f43b</c:Value>
+								</c:Datum>
+							</c:Item>
+						</c:Collection>
+					</tr:Data>
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>Action</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='1'/>
+							<ts:TotalTime value='0.0003486'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:ActionOutcome value = "Done" />
+				</tr:SessionAction>
+				<tr:SessionAction ID = "279" name = "LASER_VERSION" startDateTime = "2023-08-24T16:08:34.042"  endDateTime = "2023-08-24T16:08:34.042"  testReferenceID="ID#:WYh5ul5A7hGCBTzp90RNgB">
+					<tr:Data>
+						<c:Collection>
+							<c:Item name = "ReportText">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+									<c:Value>vertex-9.2.0-dev-rc3-932600-0-g2e377120f43b</c:Value>
+								</c:Datum>
+							</c:Item>
+						</c:Collection>
+					</tr:Data>
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>Action</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='2'/>
+							<ts:TotalTime value='0.0002505'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:ActionOutcome value = "Done" />
+				</tr:SessionAction>
+				<tr:SessionAction ID = "280" name = "SYSTEM_VERSION" startDateTime = "2023-08-24T16:08:34.043"  endDateTime = "2023-08-24T16:08:34.043"  testReferenceID="ID#:Woh5ul5A7hGCBTzp90RNgB">
+					<tr:Data>
+						<c:Collection>
+							<c:Item name = "ReportText">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+									<c:Value>vertex-9.2.0-dev-rc3-932600-0-g2e377120f43b</c:Value>
+								</c:Datum>
+							</c:Item>
+						</c:Collection>
+					</tr:Data>
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>Action</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='3'/>
+							<ts:TotalTime value='0.0001995'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:ActionOutcome value = "Done" />
+				</tr:SessionAction>
+				<tr:SessionAction ID = "281" name = "FPGA_VERSION" startDateTime = "2023-08-24T16:08:34.044"  endDateTime = "2023-08-24T16:08:34.044"  testReferenceID="ID#:W4h5ul5A7hGCBTzp90RNgB">
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>Action</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='4'/>
+							<ts:TotalTime value='0.0002404'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:ActionOutcome value = "Done" />
+				</tr:SessionAction>
+				<tr:Test ID = "282" name = "FW_COMPARISON" startDateTime = "2023-08-24T16:08:34.044"  endDateTime = "2023-08-24T16:08:34.044"  testReferenceID="ID#:XIh5ul5A7hGCBTzp90RNgB">
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>PassFailTest</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='5'/>
+							<ts:TotalTime value='5e-06'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:Outcome value = "NotStarted" />
+				</tr:Test>
+			</tr:TestGroup>
+		</tr:TestGroup>
+		<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#UUT_info" ID="283" callerName='UUT_info_reflectance' testReferenceID="ID#:iLgEh9VB7hGt86ihWW6d9A" startDateTime = "2023-08-24T16:08:34.075"  endDateTime = "2023-08-24T16:08:34.179" >
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>SequenceCall</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='12'/>
+					<ts:TotalTime value='0.103778'/>
+					<ts:ModuleTime value='0.103467'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value="Passed" />
+			<tr:SessionAction ID = "284" name = "Define report path" startDateTime = "2023-08-24T16:08:34.108"  endDateTime = "2023-08-24T16:08:34.109"  testReferenceID="ID#:4/XRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>Statement</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='0'/>
+						<ts:TotalTime value='0.0004159'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:ActionOutcome value = "Done" />
+			</tr:SessionAction>
+			<tr:SessionAction ID = "285" name = "Create log file folder" startDateTime = "2023-08-24T16:08:34.111"  endDateTime = "2023-08-24T16:08:34.158"  testReferenceID="ID#:5PXRsstB7hGt86ihWW6d9A">
+				<tr:Data>
+					<c:Collection>
+						<c:Item name = "ExitCode">
+							<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+						</c:Item>
+					</c:Collection>
+				</tr:Data>
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>CallExecutable</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='1'/>
+						<ts:TotalTime value='0.0467133'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:ActionOutcome value = "Done" />
+			</tr:SessionAction>
+			<tr:SessionAction ID = "286" name = "Define log file name" startDateTime = "2023-08-24T16:08:34.159"  endDateTime = "2023-08-24T16:08:34.159"  testReferenceID="ID#:5fXRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>Statement</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='2'/>
+						<ts:TotalTime value='0.0005875'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:ActionOutcome value = "Done" />
+			</tr:SessionAction>
+			<tr:Test ID = "287" name = "Load_tagfile_parameters" startDateTime = "2023-08-24T16:08:34.162"  endDateTime = "2023-08-24T16:08:34.162"  testReferenceID="ID#:5/XRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>NI_PropertyLoader</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='4'/>
+						<ts:TotalTime value='7.2e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "288" name = "If" startDateTime = "2023-08-24T16:08:34.163"  endDateTime = "2023-08-24T16:08:34.163"  testReferenceID="ID#:6PXRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>NI_Flow_If</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='5'/>
+						<ts:TotalTime value='6.8e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "289" name = "CSV file creator" startDateTime = "2023-08-24T16:08:34.167"  endDateTime = "2023-08-24T16:08:34.167"  testReferenceID="ID#:6fXRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>CallExecutable</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='6'/>
+						<ts:TotalTime value='9.1e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "290" name = "append_to file" startDateTime = "2023-08-24T16:08:34.168"  endDateTime = "2023-08-24T16:08:34.168"  testReferenceID="ID#:6vXRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>Action</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='7'/>
+						<ts:TotalTime value='1.03e-05'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "291" name = "Else" startDateTime = "2023-08-24T16:08:34.169"  endDateTime = "2023-08-24T16:08:34.169"  testReferenceID="ID#:6/XRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>NI_Flow_Else</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='8'/>
+						<ts:TotalTime value='4.8e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "292" name = "time_stamp_population" startDateTime = "2023-08-24T16:08:34.170"  endDateTime = "2023-08-24T16:08:34.170"  testReferenceID="ID#:7PXRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>Statement</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='9'/>
+						<ts:TotalTime value='6.1e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "293" name = "time_stamp_2" startDateTime = "2023-08-24T16:08:34.171"  endDateTime = "2023-08-24T16:08:34.171"  testReferenceID="ID#:7fXRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>Statement</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='10'/>
+						<ts:TotalTime value='8.3e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "294" name = "CSV file creator" startDateTime = "2023-08-24T16:08:34.172"  endDateTime = "2023-08-24T16:08:34.172"  testReferenceID="ID#:7vXRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>CallExecutable</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='11'/>
+						<ts:TotalTime value='5.3e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "295" name = "append_to file" startDateTime = "2023-08-24T16:08:34.173"  endDateTime = "2023-08-24T16:08:34.173"  testReferenceID="ID#:7/XRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>Action</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='12'/>
+						<ts:TotalTime value='6.7e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "296" name = "save_test_tag_version" startDateTime = "2023-08-24T16:08:34.174"  endDateTime = "2023-08-24T16:08:34.174"  testReferenceID="ID#:8PXRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>Statement</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='13'/>
+						<ts:TotalTime value='6.6e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "297" name = "save_station_version" startDateTime = "2023-08-24T16:08:34.175"  endDateTime = "2023-08-24T16:08:34.175"  testReferenceID="ID#:8fXRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>Statement</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='14'/>
+						<ts:TotalTime value='7.5e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "298" name = "save_time_stamp" startDateTime = "2023-08-24T16:08:34.176"  endDateTime = "2023-08-24T16:08:34.176"  testReferenceID="ID#:8vXRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>Statement</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='15'/>
+						<ts:TotalTime value='4.7e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "299" name = "update time_stamp" startDateTime = "2023-08-24T16:08:34.177"  endDateTime = "2023-08-24T16:08:34.177"  testReferenceID="ID#:8/XRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>Action</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='16'/>
+						<ts:TotalTime value='4.9e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "300" name = "End" startDateTime = "2023-08-24T16:08:34.178"  endDateTime = "2023-08-24T16:08:34.178"  testReferenceID="ID#:9PXRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>NI_Flow_End</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='17'/>
+						<ts:TotalTime value='5.3e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+		</tr:TestGroup>
+		<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#Low power scan pattern" ID="301" callerName='Load Low power scan pattern' testReferenceID="ID#:dDZMie1B7hGt9KihWW6d9A" startDateTime = "2023-08-24T16:08:34.217"  endDateTime = "2023-08-24T16:08:37.087" >
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>SequenceCall</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='13'/>
+					<ts:TotalTime value='2.87008'/>
+					<ts:ModuleTime value='2.86975'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value="Passed" />
+			<tr:Test ID = "302" name = "Create INI file" startDateTime = "2023-08-24T16:08:34.227"  endDateTime = "2023-08-24T16:08:34.227"  testReferenceID="ID#:1XFyf+1B7hGt9KihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>Action</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='0'/>
+						<ts:TotalTime value='1.14e-05'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:SessionAction ID = "303" name = "Load elevation ini" startDateTime = "2023-08-24T16:08:34.229"  endDateTime = "2023-08-24T16:08:37.085"  testReferenceID="ID#:1nFyf+1B7hGt9KihWW6d9A">
+				<tr:Data>
+					<c:Collection>
+						<c:Item name = "ExitCode">
+							<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+						</c:Item>
+					</c:Collection>
+				</tr:Data>
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>CallExecutable</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='1'/>
+						<ts:TotalTime value='2.85632'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:ActionOutcome value = "Done" />
+			</tr:SessionAction>
+		</tr:TestGroup>
+		<tr:SessionAction ID = "304" name = "Wait" startDateTime = "2023-08-24T16:08:37.105"  endDateTime = "2023-08-24T16:08:39.105"  testReferenceID="ID#:gyA27Z9C7hGt9KihWW6d9A">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Wait</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='14'/>
+					<ts:TotalTime value='2.00054'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#Run sensor" ID="305" callerName='Run_sensor' testReferenceID="ID#:ibgEh9VB7hGt86ihWW6d9A" startDateTime = "2023-08-24T16:08:39.106"  endDateTime = "2023-08-24T16:08:44.756" >
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>SequenceCall</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='15'/>
+					<ts:TotalTime value='5.65011'/>
+					<ts:ModuleTime value='5.64982'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value="Passed" />
+			<tr:Test name="Config registers" ID="306" testReferenceID="ID#:SoAQistB7hGt86ihWW6d9A" startDateTime = "2023-08-24T16:08:39.129"  endDateTime = "2023-08-24T16:08:39.129" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='4'/>
+						<ts:TotalTime value='7.8e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="NotStarted" />
+			</tr:Test>
+			<tr:Test name="Config FOV" ID="307" testReferenceID="ID#:S4AQistB7hGt86ihWW6d9A" startDateTime = "2023-08-24T16:08:39.130"  endDateTime = "2023-08-24T16:08:39.130" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='5'/>
+						<ts:TotalTime value='3.1e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="NotStarted" />
+			</tr:Test>
+			<tr:Test name="Config Laser Power" ID="308" testReferenceID="ID#:TIAQistB7hGt86ihWW6d9A" startDateTime = "2023-08-24T16:08:39.132"  endDateTime = "2023-08-24T16:08:39.132" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='6'/>
+						<ts:TotalTime value='5.8e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="NotStarted" />
+			</tr:Test>
+			<tr:Test name="Config eclipses" ID="309" testReferenceID="ID#:TYAQistB7hGt86ihWW6d9A" startDateTime = "2023-08-24T16:08:39.133"  endDateTime = "2023-08-24T16:08:39.133" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='7'/>
+						<ts:TotalTime value='6.1e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "310" name = "Envision Screenshot" startDateTime = "2023-08-24T16:08:39.133"  endDateTime = "2023-08-24T16:08:39.133"  testReferenceID="ID#:ToAQistB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>MessagePopup</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='8'/>
+						<ts:TotalTime value='5.4e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test name="Pcap_capture" ID="311" testReferenceID="ID#:UIAQistB7hGt86ihWW6d9A" startDateTime = "2023-08-24T16:08:39.135"  endDateTime = "2023-08-24T16:08:44.723" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='10'/>
+						<ts:TotalTime value='5.58819'/>
+						<ts:ModuleTime value='5.5879'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="Passed" />
+			</tr:Test>
+		</tr:TestGroup>
+		<tr:SessionAction ID = "312" name = "Wait" startDateTime = "2023-08-24T16:08:44.781"  endDateTime = "2023-08-24T16:08:46.783"  testReferenceID="ID#:tqwY26NC7hGt9KihWW6d9A">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Wait</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='16'/>
+					<ts:TotalTime value='2.00112'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#High power scan pattern" ID="313" callerName='Load High power scan pattern' testReferenceID="ID#:2vMqle9B7hGt9KihWW6d9A" startDateTime = "2023-08-24T16:08:46.783"  endDateTime = "2023-08-24T16:08:48.493" >
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>SequenceCall</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='17'/>
+					<ts:TotalTime value='1.70991'/>
+					<ts:ModuleTime value='1.70956'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value="Passed" />
+			<tr:Test ID = "314" name = "Create INI file" startDateTime = "2023-08-24T16:08:46.799"  endDateTime = "2023-08-24T16:08:46.799"  testReferenceID="ID#:xdhsc55C7hGt9KihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>Action</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='0'/>
+						<ts:TotalTime value='1.29e-05'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:SessionAction ID = "315" name = "Load elevation ini" startDateTime = "2023-08-24T16:08:46.799"  endDateTime = "2023-08-24T16:08:48.491"  testReferenceID="ID#:xthsc55C7hGt9KihWW6d9A">
+				<tr:Data>
+					<c:Collection>
+						<c:Item name = "ExitCode">
+							<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+						</c:Item>
+					</c:Collection>
+				</tr:Data>
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>CallExecutable</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='1'/>
+						<ts:TotalTime value='1.6917'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:ActionOutcome value = "Done" />
+			</tr:SessionAction>
+		</tr:TestGroup>
+		<tr:SessionAction ID = "316" name = "Wait" startDateTime = "2023-08-24T16:08:48.535"  endDateTime = "2023-08-24T16:08:50.536"  testReferenceID="ID#:X/Om9J9C7hGt9KihWW6d9A">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Wait</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='18'/>
+					<ts:TotalTime value='2.00074'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#Run sensor_2" ID="317" callerName='Pcap_collection_2' testReferenceID="ID#:irIpZaNC7hGt9KihWW6d9A" startDateTime = "2023-08-24T16:08:50.536"  endDateTime = "2023-08-24T16:08:54.680" >
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>SequenceCall</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='19'/>
+					<ts:TotalTime value='4.14358'/>
+					<ts:ModuleTime value='4.14328'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value="Passed" />
+			<tr:Test name="Config registers" ID="318" testReferenceID="ID#:eR1YW6NC7hGt9KihWW6d9A" startDateTime = "2023-08-24T16:08:50.561"  endDateTime = "2023-08-24T16:08:50.561" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='4'/>
+						<ts:TotalTime value='6.9e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="NotStarted" />
+			</tr:Test>
+			<tr:Test name="Config FOV" ID="319" testReferenceID="ID#:eh1YW6NC7hGt9KihWW6d9A" startDateTime = "2023-08-24T16:08:50.562"  endDateTime = "2023-08-24T16:08:50.562" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='5'/>
+						<ts:TotalTime value='4.4e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="NotStarted" />
+			</tr:Test>
+			<tr:Test name="Config Laser Power" ID="320" testReferenceID="ID#:ex1YW6NC7hGt9KihWW6d9A" startDateTime = "2023-08-24T16:08:50.563"  endDateTime = "2023-08-24T16:08:50.563" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='6'/>
+						<ts:TotalTime value='3.8e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="NotStarted" />
+			</tr:Test>
+			<tr:Test name="Config eclipses" ID="321" testReferenceID="ID#:fB1YW6NC7hGt9KihWW6d9A" startDateTime = "2023-08-24T16:08:50.564"  endDateTime = "2023-08-24T16:08:50.564" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='7'/>
+						<ts:TotalTime value='5.9e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "322" name = "Envision Screenshot" startDateTime = "2023-08-24T16:08:50.564"  endDateTime = "2023-08-24T16:08:50.564"  testReferenceID="ID#:fR1YW6NC7hGt9KihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>MessagePopup</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='8'/>
+						<ts:TotalTime value='5.2e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test name="Pcap_capture_2" ID="323" testReferenceID="ID#:fx1YW6NC7hGt9KihWW6d9A" startDateTime = "2023-08-24T16:08:50.566"  endDateTime = "2023-08-24T16:08:54.666" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='10'/>
+						<ts:TotalTime value='4.10017'/>
+						<ts:ModuleTime value='4.09991'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="Passed" />
+			</tr:Test>
+		</tr:TestGroup>
+		<tr:SessionAction ID = "324" name = "Wait" startDateTime = "2023-08-24T16:08:54.701"  endDateTime = "2023-08-24T16:08:56.702"  testReferenceID="ID#:mDvesrNC7hGCer468rYFnD">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Wait</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='20'/>
+					<ts:TotalTime value='2.00112'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#Sensor_roic_dump" ID="325" callerName='Roic_dump' testReferenceID="ID#:xHNOJ7RC7hGCer468rYFnD" startDateTime = "2023-08-24T16:08:56.703"  endDateTime = "2023-08-24T16:09:10.367" >
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>SequenceCall</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='21'/>
+					<ts:TotalTime value='13.6635'/>
+					<ts:ModuleTime value='13.6632'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value="Passed" />
+			<tr:SessionAction ID = "326" name = "Distance Reference" startDateTime = "2023-08-24T16:09:02.911"  endDateTime = "2023-08-24T16:09:05.260"  testReferenceID="ID#:EJPgdLVC7hGCer468rYFnD">
+				<tr:Data>
+					<c:Collection>
+						<c:Item name = "ButtonHit">
+							<c:Datum value = "1" xsi:type="ts:TS_double" flags = "0x2000"/>
+						</c:Item>
+					</c:Collection>
+				</tr:Data>
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>MessagePopup</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='5'/>
+						<ts:TotalTime value='2.349'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:ActionOutcome value = "Done" />
+			</tr:SessionAction>
+			<tr:SessionAction ID = "327" name = "5 min wait" startDateTime = "2023-08-24T16:09:05.399"  endDateTime = "2023-08-24T16:09:07.100"  testReferenceID="ID#:56IVl7dC7hGCer468rYFnD">
+				<tr:Data>
+					<c:Collection>
+						<c:Item name = "ButtonHit">
+							<c:Datum value = "1" xsi:type="ts:TS_double" flags = "0x2000"/>
+						</c:Item>
+					</c:Collection>
+				</tr:Data>
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>MessagePopup</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='7'/>
+						<ts:TotalTime value='1.70144'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:ActionOutcome value = "Done" />
+			</tr:SessionAction>
+			<tr:SessionAction ID = "328" name = "Wait" startDateTime = "2023-08-24T16:09:07.101"  endDateTime = "2023-08-24T16:09:09.102"  testReferenceID="ID#:6KIVl7dC7hGCer468rYFnD">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>NI_Wait</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='8'/>
+						<ts:TotalTime value='2.00112'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:ActionOutcome value = "Done" />
+			</tr:SessionAction>
+		</tr:TestGroup>
+		<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#power_cycle" ID="329" callerName='Power cycle' testReferenceID="ID#:+l7SnbhC7hGCer468rYFnD" startDateTime = "2023-08-24T16:09:10.381"  endDateTime = "2023-08-24T16:10:06.470" >
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>SequenceCall</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='24'/>
+					<ts:TotalTime value='56.0888'/>
+					<ts:ModuleTime value='56.0883'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value="Passed" />
+			<tr:SessionAction ID = "330" name = "Wait for sensor to Turn Off completely" startDateTime = "2023-08-24T16:09:10.417"  endDateTime = "2023-08-24T16:09:16.418"  testReferenceID="ID#:m1GRdLhC7hGCer468rYFnD">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>NI_Wait</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='1'/>
+						<ts:TotalTime value='6.00065'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:ActionOutcome value = "Done" />
+			</tr:SessionAction>
+			<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#Enable_TCU" ID="331" callerName='Enable TCU' testReferenceID="ID#:nFGRdLhC7hGCer468rYFnD" startDateTime = "2023-08-24T16:09:16.418"  endDateTime = "2023-08-24T16:09:45.225" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='2'/>
+						<ts:TotalTime value='28.8063'/>
+						<ts:ModuleTime value='28.8061'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="Passed" />
+				<tr:Test ID = "332" name = "TurnOn_PowerSupply" startDateTime = "2023-08-24T16:09:16.430"  endDateTime = "2023-08-24T16:09:16.674"  testReferenceID="ID#:6OFKwV1A7hGCBTzp90RNgB">
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>PassFailTest</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='0'/>
+							<ts:TotalTime value='0.243553'/>
+							<ts:ModuleTime value='0.243094'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:Outcome value = "Passed" />
+				</tr:Test>
+				<tr:SessionAction ID = "333" name = "Wait" startDateTime = "2023-08-24T16:09:16.674"  endDateTime = "2023-08-24T16:09:24.675"  testReferenceID="ID#:GVldaPlA7hGt86ihWW6d9A">
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>NI_Wait</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='1'/>
+							<ts:TotalTime value='8.00063'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:ActionOutcome value = "Done" />
+				</tr:SessionAction>
+				<tr:SessionAction ID = "334" name = "Enable TCU" startDateTime = "2023-08-24T16:09:24.675"  endDateTime = "2023-08-24T16:09:39.932"  testReferenceID="ID#:IyyuPPNA7hGt86ihWW6d9A">
+					<tr:Data>
+						<c:Collection>
+							<c:Item name = "ButtonHit">
+								<c:Datum value = "1" xsi:type="ts:TS_double" flags = "0x2000"/>
+							</c:Item>
+						</c:Collection>
+					</tr:Data>
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>MessagePopup</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='2'/>
+							<ts:TotalTime value='15.2563'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:ActionOutcome value = "Done" />
+				</tr:SessionAction>
+				<tr:SessionAction ID = "335" name = "Wait" startDateTime = "2023-08-24T16:09:39.932"  endDateTime = "2023-08-24T16:09:44.934"  testReferenceID="ID#:qixk6QBB7hGt86ihWW6d9A">
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>NI_Wait</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='3'/>
+							<ts:TotalTime value='5.00212'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:ActionOutcome value = "Done" />
+				</tr:SessionAction>
+				<tr:Test ID = "336" name = "Enable_TCU" startDateTime = "2023-08-24T16:09:44.937"  endDateTime = "2023-08-24T16:09:44.937"  testReferenceID="ID#:6eFKwV1A7hGCBTzp90RNgB">
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>PassFailTest</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='4'/>
+							<ts:TotalTime value='3.71e-05'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:Outcome value = "NotStarted" />
+				</tr:Test>
+				<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#Wait and validate Power" ID="337" callerName='STANDBY_CURRENT' testReferenceID="ID#:6uFKwV1A7hGCBTzp90RNgB" startDateTime = "2023-08-24T16:09:44.940"  endDateTime = "2023-08-24T16:09:45.224" >
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>SequenceCall</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='5'/>
+							<ts:TotalTime value='0.283418'/>
+							<ts:ModuleTime value='0.283183'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:Outcome value="Passed" />
+					<tr:Test ID = "338" name = "STANDBY_CURRENT_1" startDateTime = "2023-08-24T16:09:45.223"  endDateTime = "2023-08-24T16:09:45.223"  testReferenceID="ID#:9sdNz11A7hGCBTzp90RNgB">
+						<tr:Extension>
+							<ts:TSStepProperties>
+								<ts:StepType>NumericLimitTest</ts:StepType>
+								<ts:StepGroup>Main</ts:StepGroup>
+								<ts:BlockLevel value='0'/>
+								<ts:Index value='7'/>
+								<ts:TotalTime value='0.0003729'/>
+							</ts:TSStepProperties>
+						</tr:Extension>
+						<tr:Outcome value = "Passed" />
+						<tr:TestResult ID = "tr-6244cf3a-42ba-11ee-827a-be3af2b6059f" name = "Numeric">
+							<tr:TestData>
+								<c:Datum value = "0.7058515" xsi:type="ts:TS_double" nonStandardUnit="A" flags = "0x2400"/>
+							</tr:TestData>
+							<tr:TestLimits>
+								<tr:Limits>
+									<c:LimitPair operator = "AND">
+										<c:Limit comparator = "GE">
+											<c:Datum nonStandardUnit = "A" value = "0.7" xsi:type="ts:TS_double" flags = "0x0000"/>
+										</c:Limit>
+										<c:Limit comparator = "LE">
+											<c:Datum nonStandardUnit = "A" value = "1.1" xsi:type="ts:TS_double" flags = "0x0000"/>
+										</c:Limit>
+									</c:LimitPair>
+									<c:Extension>
+										<ts:TSLimitProperties>
+											<ts:RawLimits>
+												<ts:Low value = "0.7" xsi:type="c:double" />
+												<ts:High value = "1.1" xsi:type="c:double" />
+											</ts:RawLimits>
+										</ts:TSLimitProperties>
+									</c:Extension>
+								</tr:Limits>
+							</tr:TestLimits>
+						</tr:TestResult>
+					</tr:Test>
+				</tr:TestGroup>
+			</tr:TestGroup>
+			<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#Init_Sensor_2" ID="340" callerName='Initialize_Sensor' testReferenceID="ID#:nVGRdLhC7hGCer468rYFnD" startDateTime = "2023-08-24T16:09:45.225"  endDateTime = "2023-08-24T16:10:06.463" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='3'/>
+						<ts:TotalTime value='21.2377'/>
+						<ts:ModuleTime value='21.2372'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="Passed" />
+				<tr:SessionAction ID = "341" name = "Wait" startDateTime = "2023-08-24T16:09:45.227"  endDateTime = "2023-08-24T16:09:50.227"  testReferenceID="ID#:RoYRsrhC7hGCer468rYFnD">
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>NI_Wait</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='0'/>
+							<ts:TotalTime value='5.00053'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:ActionOutcome value = "Done" />
+				</tr:SessionAction>
+				<tr:Test ID = "342" name = "Open Communication" startDateTime = "2023-08-24T16:09:50.247"  endDateTime = "2023-08-24T16:09:57.019"  testReferenceID="ID#:R4YRsrhC7hGCer468rYFnD">
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>PassFailTest</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='1'/>
+							<ts:TotalTime value='6.77207'/>
+							<ts:ModuleTime value='6.77072'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:Outcome value = "Passed" />
+				</tr:Test>
+				<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#Activate_sensor_2" ID="343" callerName='Activate_sensor' testReferenceID="ID#:SIYRsrhC7hGCer468rYFnD" startDateTime = "2023-08-24T16:09:57.020"  endDateTime = "2023-08-24T16:10:00.622" >
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>SequenceCall</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='2'/>
+							<ts:TotalTime value='3.60135'/>
+							<ts:ModuleTime value='3.60087'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:Outcome value="Passed" />
+					<tr:Test ID = "344" name = "ROIC info" startDateTime = "2023-08-24T16:10:00.614"  endDateTime = "2023-08-24T16:10:00.614"  testReferenceID="ID#:nuIeyLhC7hGCer468rYFnD">
+						<tr:Extension>
+							<ts:TSStepProperties>
+								<ts:StepType>Statement</ts:StepType>
+								<ts:StepGroup>Main</ts:StepGroup>
+								<ts:BlockLevel value='0'/>
+								<ts:Index value='9'/>
+								<ts:TotalTime value='1.01e-05'/>
+							</ts:TSStepProperties>
+						</tr:Extension>
+						<tr:Outcome value = "NotStarted" />
+					</tr:Test>
+					<tr:Test ID = "345" name = "If" startDateTime = "2023-08-24T16:10:00.615"  endDateTime = "2023-08-24T16:10:00.615"  testReferenceID="ID#:n+IeyLhC7hGCer468rYFnD">
+						<tr:Extension>
+							<ts:TSStepProperties>
+								<ts:StepType>NI_Flow_If</ts:StepType>
+								<ts:StepGroup>Main</ts:StepGroup>
+								<ts:BlockLevel value='0'/>
+								<ts:Index value='10'/>
+								<ts:TotalTime value='6.4e-06'/>
+							</ts:TSStepProperties>
+						</tr:Extension>
+						<tr:Outcome value = "NotStarted" />
+					</tr:Test>
+					<tr:Test ID = "346" name = "End" startDateTime = "2023-08-24T16:10:00.619"  endDateTime = "2023-08-24T16:10:00.619"  testReferenceID="ID#:oeIeyLhC7hGCer468rYFnD">
+						<tr:Extension>
+							<ts:TSStepProperties>
+								<ts:StepType>NI_Flow_End</ts:StepType>
+								<ts:StepGroup>Main</ts:StepGroup>
+								<ts:BlockLevel value='0'/>
+								<ts:Index value='12'/>
+								<ts:TotalTime value='7.5e-06'/>
+							</ts:TSStepProperties>
+						</tr:Extension>
+						<tr:Outcome value = "NotStarted" />
+					</tr:Test>
+				</tr:TestGroup>
+				<tr:SessionAction ID = "347" name = "Wait" startDateTime = "2023-08-24T16:10:00.627"  endDateTime = "2023-08-24T16:10:05.628"  testReferenceID="ID#:SYYRsrhC7hGCer468rYFnD">
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>NI_Wait</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='3'/>
+							<ts:TotalTime value='5.00069'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:ActionOutcome value = "Done" />
+				</tr:SessionAction>
+				<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#Wait and validate Power" ID="348" callerName='Validate current value' testReferenceID="ID#:SoYRsrhC7hGCer468rYFnD" startDateTime = "2023-08-24T16:10:05.629"  endDateTime = "2023-08-24T16:10:06.452" >
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>SequenceCall</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='4'/>
+							<ts:TotalTime value='0.823748'/>
+							<ts:ModuleTime value='0.823314'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:Outcome value="Passed" />
+					<tr:Test ID = "349" name = "OPERATION_CURRENT" startDateTime = "2023-08-24T16:10:06.450"  endDateTime = "2023-08-24T16:10:06.451"  testReferenceID="ID#:9sdNz11A7hGCBTzp90RNgB">
+						<tr:Extension>
+							<ts:TSStepProperties>
+								<ts:StepType>NumericLimitTest</ts:StepType>
+								<ts:StepGroup>Main</ts:StepGroup>
+								<ts:BlockLevel value='0'/>
+								<ts:Index value='7'/>
+								<ts:TotalTime value='0.0007757'/>
+							</ts:TSStepProperties>
+						</tr:Extension>
+						<tr:Outcome value = "Passed" />
+						<tr:TestResult ID = "tr-6244cf3c-42ba-11ee-827a-be3af2b6059f" name = "Numeric">
+							<tr:TestData>
+								<c:Datum value = "1.562499" xsi:type="ts:TS_double" nonStandardUnit="A" flags = "0x2400"/>
+							</tr:TestData>
+							<tr:TestLimits>
+								<tr:Limits>
+									<c:LimitPair operator = "AND">
+										<c:Limit comparator = "GE">
+											<c:Datum nonStandardUnit = "A" value = "1.5" xsi:type="ts:TS_double" flags = "0x0000"/>
+										</c:Limit>
+										<c:Limit comparator = "LE">
+											<c:Datum nonStandardUnit = "A" value = "2.4" xsi:type="ts:TS_double" flags = "0x0000"/>
+										</c:Limit>
+									</c:LimitPair>
+									<c:Extension>
+										<ts:TSLimitProperties>
+											<ts:RawLimits>
+												<ts:Low value = "1.5" xsi:type="c:double" />
+												<ts:High value = "2.4" xsi:type="c:double" />
+											</ts:RawLimits>
+										</ts:TSLimitProperties>
+									</c:Extension>
+								</tr:Limits>
+							</tr:TestLimits>
+						</tr:TestResult>
+					</tr:Test>
+				</tr:TestGroup>
+			</tr:TestGroup>
+		</tr:TestGroup>
+		<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#Verify sensor" ID="351" callerName='Verify_sensor' testReferenceID="ID#:+17SnbhC7hGCer468rYFnD" startDateTime = "2023-08-24T16:10:06.489"  endDateTime = "2023-08-24T16:10:06.662" >
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>SequenceCall</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='25'/>
+					<ts:TotalTime value='0.173256'/>
+					<ts:ModuleTime value='0.17295'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value="Passed" />
+			<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#Verify FW" ID="352" callerName='Verify FW' testReferenceID="ID#:J1muXF5A7hGCBTzp90RNgB" startDateTime = "2023-08-24T16:10:06.493"  endDateTime = "2023-08-24T16:10:06.656" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='0'/>
+						<ts:TotalTime value='0.163022'/>
+						<ts:ModuleTime value='0.162783'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="Passed" />
+				<tr:SessionAction ID = "353" name = "HYDRA_VERSION" startDateTime = "2023-08-24T16:10:06.650"  endDateTime = "2023-08-24T16:10:06.651"  testReferenceID="ID#:WIh5ul5A7hGCBTzp90RNgB">
+					<tr:Data>
+						<c:Collection>
+							<c:Item name = "ReportText">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+									<c:Value>vertex-9.2.0-dev-rc3-932600-0-g2e377120f43b</c:Value>
+								</c:Datum>
+							</c:Item>
+						</c:Collection>
+					</tr:Data>
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>Action</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='1'/>
+							<ts:TotalTime value='0.0003309'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:ActionOutcome value = "Done" />
+				</tr:SessionAction>
+				<tr:SessionAction ID = "354" name = "LASER_VERSION" startDateTime = "2023-08-24T16:10:06.652"  endDateTime = "2023-08-24T16:10:06.652"  testReferenceID="ID#:WYh5ul5A7hGCBTzp90RNgB">
+					<tr:Data>
+						<c:Collection>
+							<c:Item name = "ReportText">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+									<c:Value>vertex-9.2.0-dev-rc3-932600-0-g2e377120f43b</c:Value>
+								</c:Datum>
+							</c:Item>
+						</c:Collection>
+					</tr:Data>
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>Action</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='2'/>
+							<ts:TotalTime value='0.0004624'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:ActionOutcome value = "Done" />
+				</tr:SessionAction>
+				<tr:SessionAction ID = "355" name = "SYSTEM_VERSION" startDateTime = "2023-08-24T16:10:06.653"  endDateTime = "2023-08-24T16:10:06.653"  testReferenceID="ID#:Woh5ul5A7hGCBTzp90RNgB">
+					<tr:Data>
+						<c:Collection>
+							<c:Item name = "ReportText">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+									<c:Value>vertex-9.2.0-dev-rc3-932600-0-g2e377120f43b</c:Value>
+								</c:Datum>
+							</c:Item>
+						</c:Collection>
+					</tr:Data>
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>Action</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='3'/>
+							<ts:TotalTime value='0.0001992'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:ActionOutcome value = "Done" />
+				</tr:SessionAction>
+				<tr:SessionAction ID = "356" name = "FPGA_VERSION" startDateTime = "2023-08-24T16:10:06.654"  endDateTime = "2023-08-24T16:10:06.654"  testReferenceID="ID#:W4h5ul5A7hGCBTzp90RNgB">
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>Action</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='4'/>
+							<ts:TotalTime value='0.0001882'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:ActionOutcome value = "Done" />
+				</tr:SessionAction>
+				<tr:Test ID = "357" name = "FW_COMPARISON" startDateTime = "2023-08-24T16:10:06.654"  endDateTime = "2023-08-24T16:10:06.654"  testReferenceID="ID#:XIh5ul5A7hGCBTzp90RNgB">
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>PassFailTest</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='5'/>
+							<ts:TotalTime value='7.2e-06'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:Outcome value = "NotStarted" />
+				</tr:Test>
+			</tr:TestGroup>
+		</tr:TestGroup>
+		<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#power_cycle" ID="358" callerName='Power cycle' testReferenceID="ID#:1haqQrlC7hGCer468rYFnD" startDateTime = "2023-08-24T16:10:06.686"  endDateTime = "2023-08-24T16:10:58.455" >
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>SequenceCall</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='31'/>
+					<ts:TotalTime value='51.7692'/>
+					<ts:ModuleTime value='51.769'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value="Passed" />
+			<tr:SessionAction ID = "359" name = "Wait for sensor to Turn Off completely" startDateTime = "2023-08-24T16:10:06.718"  endDateTime = "2023-08-24T16:10:12.719"  testReferenceID="ID#:m1GRdLhC7hGCer468rYFnD">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>NI_Wait</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='1'/>
+						<ts:TotalTime value='6.00151'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:ActionOutcome value = "Done" />
+			</tr:SessionAction>
+			<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#Enable_TCU" ID="360" callerName='Enable TCU' testReferenceID="ID#:nFGRdLhC7hGCer468rYFnD" startDateTime = "2023-08-24T16:10:12.720"  endDateTime = "2023-08-24T16:10:37.143" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='2'/>
+						<ts:TotalTime value='24.4233'/>
+						<ts:ModuleTime value='24.423'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="Passed" />
+				<tr:Test ID = "361" name = "TurnOn_PowerSupply" startDateTime = "2023-08-24T16:10:12.728"  endDateTime = "2023-08-24T16:10:12.978"  testReferenceID="ID#:6OFKwV1A7hGCBTzp90RNgB">
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>PassFailTest</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='0'/>
+							<ts:TotalTime value='0.24997'/>
+							<ts:ModuleTime value='0.249332'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:Outcome value = "Passed" />
+				</tr:Test>
+				<tr:SessionAction ID = "362" name = "Wait" startDateTime = "2023-08-24T16:10:12.979"  endDateTime = "2023-08-24T16:10:20.980"  testReferenceID="ID#:GVldaPlA7hGt86ihWW6d9A">
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>NI_Wait</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='1'/>
+							<ts:TotalTime value='8.00063'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:ActionOutcome value = "Done" />
+				</tr:SessionAction>
+				<tr:SessionAction ID = "363" name = "Enable TCU" startDateTime = "2023-08-24T16:10:20.980"  endDateTime = "2023-08-24T16:10:31.849"  testReferenceID="ID#:IyyuPPNA7hGt86ihWW6d9A">
+					<tr:Data>
+						<c:Collection>
+							<c:Item name = "ButtonHit">
+								<c:Datum value = "1" xsi:type="ts:TS_double" flags = "0x2000"/>
+							</c:Item>
+						</c:Collection>
+					</tr:Data>
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>MessagePopup</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='2'/>
+							<ts:TotalTime value='10.8688'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:ActionOutcome value = "Done" />
+				</tr:SessionAction>
+				<tr:SessionAction ID = "364" name = "Wait" startDateTime = "2023-08-24T16:10:31.850"  endDateTime = "2023-08-24T16:10:36.851"  testReferenceID="ID#:qixk6QBB7hGt86ihWW6d9A">
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>NI_Wait</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='3'/>
+							<ts:TotalTime value='5.00115'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:ActionOutcome value = "Done" />
+				</tr:SessionAction>
+				<tr:Test ID = "365" name = "Enable_TCU" startDateTime = "2023-08-24T16:10:36.853"  endDateTime = "2023-08-24T16:10:36.853"  testReferenceID="ID#:6eFKwV1A7hGCBTzp90RNgB">
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>PassFailTest</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='4'/>
+							<ts:TotalTime value='1.63e-05'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:Outcome value = "NotStarted" />
+				</tr:Test>
+				<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#Wait and validate Power" ID="366" callerName='STANDBY_CURRENT' testReferenceID="ID#:6uFKwV1A7hGCBTzp90RNgB" startDateTime = "2023-08-24T16:10:36.855"  endDateTime = "2023-08-24T16:10:37.138" >
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>SequenceCall</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='5'/>
+							<ts:TotalTime value='0.282947'/>
+							<ts:ModuleTime value='0.28271'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:Outcome value="Passed" />
+					<tr:Test ID = "367" name = "STANDBY_CURRENT_1" startDateTime = "2023-08-24T16:10:37.137"  endDateTime = "2023-08-24T16:10:37.137"  testReferenceID="ID#:9sdNz11A7hGCBTzp90RNgB">
+						<tr:Extension>
+							<ts:TSStepProperties>
+								<ts:StepType>NumericLimitTest</ts:StepType>
+								<ts:StepGroup>Main</ts:StepGroup>
+								<ts:BlockLevel value='0'/>
+								<ts:Index value='7'/>
+								<ts:TotalTime value='0.0003773'/>
+							</ts:TSStepProperties>
+						</tr:Extension>
+						<tr:Outcome value = "Passed" />
+						<tr:TestResult ID = "tr-6244cf3e-42ba-11ee-827a-be3af2b6059f" name = "Numeric">
+							<tr:TestData>
+								<c:Datum value = "0.7130191" xsi:type="ts:TS_double" nonStandardUnit="A" flags = "0x2400"/>
+							</tr:TestData>
+							<tr:TestLimits>
+								<tr:Limits>
+									<c:LimitPair operator = "AND">
+										<c:Limit comparator = "GE">
+											<c:Datum nonStandardUnit = "A" value = "0.7" xsi:type="ts:TS_double" flags = "0x0000"/>
+										</c:Limit>
+										<c:Limit comparator = "LE">
+											<c:Datum nonStandardUnit = "A" value = "1.1" xsi:type="ts:TS_double" flags = "0x0000"/>
+										</c:Limit>
+									</c:LimitPair>
+									<c:Extension>
+										<ts:TSLimitProperties>
+											<ts:RawLimits>
+												<ts:Low value = "0.7" xsi:type="c:double" />
+												<ts:High value = "1.1" xsi:type="c:double" />
+											</ts:RawLimits>
+										</ts:TSLimitProperties>
+									</c:Extension>
+								</tr:Limits>
+							</tr:TestLimits>
+						</tr:TestResult>
+					</tr:Test>
+				</tr:TestGroup>
+			</tr:TestGroup>
+			<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#Init_Sensor_2" ID="369" callerName='Initialize_Sensor' testReferenceID="ID#:nVGRdLhC7hGCer468rYFnD" startDateTime = "2023-08-24T16:10:37.147"  endDateTime = "2023-08-24T16:10:58.450" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='3'/>
+						<ts:TotalTime value='21.3028'/>
+						<ts:ModuleTime value='21.3025'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="Passed" />
+				<tr:SessionAction ID = "370" name = "Wait" startDateTime = "2023-08-24T16:10:37.153"  endDateTime = "2023-08-24T16:10:42.155"  testReferenceID="ID#:RoYRsrhC7hGCer468rYFnD">
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>NI_Wait</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='0'/>
+							<ts:TotalTime value='5.00141'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:ActionOutcome value = "Done" />
+				</tr:SessionAction>
+				<tr:Test ID = "371" name = "Open Communication" startDateTime = "2023-08-24T16:10:42.155"  endDateTime = "2023-08-24T16:10:49.039"  testReferenceID="ID#:R4YRsrhC7hGCer468rYFnD">
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>PassFailTest</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='1'/>
+							<ts:TotalTime value='6.88342'/>
+							<ts:ModuleTime value='6.88287'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:Outcome value = "Passed" />
+				</tr:Test>
+				<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#Activate_sensor_2" ID="372" callerName='Activate_sensor' testReferenceID="ID#:SIYRsrhC7hGCer468rYFnD" startDateTime = "2023-08-24T16:10:49.040"  endDateTime = "2023-08-24T16:10:52.618" >
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>SequenceCall</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='2'/>
+							<ts:TotalTime value='3.57863'/>
+							<ts:ModuleTime value='3.57816'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:Outcome value="Passed" />
+					<tr:Test ID = "373" name = "ROIC info" startDateTime = "2023-08-24T16:10:52.610"  endDateTime = "2023-08-24T16:10:52.610"  testReferenceID="ID#:nuIeyLhC7hGCer468rYFnD">
+						<tr:Extension>
+							<ts:TSStepProperties>
+								<ts:StepType>Statement</ts:StepType>
+								<ts:StepGroup>Main</ts:StepGroup>
+								<ts:BlockLevel value='0'/>
+								<ts:Index value='9'/>
+								<ts:TotalTime value='9.7e-06'/>
+							</ts:TSStepProperties>
+						</tr:Extension>
+						<tr:Outcome value = "NotStarted" />
+					</tr:Test>
+					<tr:Test ID = "374" name = "If" startDateTime = "2023-08-24T16:10:52.612"  endDateTime = "2023-08-24T16:10:52.612"  testReferenceID="ID#:n+IeyLhC7hGCer468rYFnD">
+						<tr:Extension>
+							<ts:TSStepProperties>
+								<ts:StepType>NI_Flow_If</ts:StepType>
+								<ts:StepGroup>Main</ts:StepGroup>
+								<ts:BlockLevel value='0'/>
+								<ts:Index value='10'/>
+								<ts:TotalTime value='6.3e-06'/>
+							</ts:TSStepProperties>
+						</tr:Extension>
+						<tr:Outcome value = "NotStarted" />
+					</tr:Test>
+					<tr:Test ID = "375" name = "End" startDateTime = "2023-08-24T16:10:52.615"  endDateTime = "2023-08-24T16:10:52.615"  testReferenceID="ID#:oeIeyLhC7hGCer468rYFnD">
+						<tr:Extension>
+							<ts:TSStepProperties>
+								<ts:StepType>NI_Flow_End</ts:StepType>
+								<ts:StepGroup>Main</ts:StepGroup>
+								<ts:BlockLevel value='0'/>
+								<ts:Index value='12'/>
+								<ts:TotalTime value='1.35e-05'/>
+							</ts:TSStepProperties>
+						</tr:Extension>
+						<tr:Outcome value = "NotStarted" />
+					</tr:Test>
+				</tr:TestGroup>
+				<tr:SessionAction ID = "376" name = "Wait" startDateTime = "2023-08-24T16:10:52.623"  endDateTime = "2023-08-24T16:10:57.625"  testReferenceID="ID#:SYYRsrhC7hGCer468rYFnD">
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>NI_Wait</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='3'/>
+							<ts:TotalTime value='5.00181'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:ActionOutcome value = "Done" />
+				</tr:SessionAction>
+				<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#Wait and validate Power" ID="377" callerName='Validate current value' testReferenceID="ID#:SoYRsrhC7hGCer468rYFnD" startDateTime = "2023-08-24T16:10:57.626"  endDateTime = "2023-08-24T16:10:58.445" >
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>SequenceCall</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='4'/>
+							<ts:TotalTime value='0.819005'/>
+							<ts:ModuleTime value='0.818575'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:Outcome value="Passed" />
+					<tr:Test ID = "378" name = "OPERATION_CURRENT" startDateTime = "2023-08-24T16:10:58.444"  endDateTime = "2023-08-24T16:10:58.444"  testReferenceID="ID#:9sdNz11A7hGCBTzp90RNgB">
+						<tr:Extension>
+							<ts:TSStepProperties>
+								<ts:StepType>NumericLimitTest</ts:StepType>
+								<ts:StepGroup>Main</ts:StepGroup>
+								<ts:BlockLevel value='0'/>
+								<ts:Index value='7'/>
+								<ts:TotalTime value='0.0003692'/>
+							</ts:TSStepProperties>
+						</tr:Extension>
+						<tr:Outcome value = "Passed" />
+						<tr:TestResult ID = "tr-6244cf3f-42ba-11ee-827a-be3af2b6059f" name = "Numeric">
+							<tr:TestData>
+								<c:Datum value = "1.555544" xsi:type="ts:TS_double" nonStandardUnit="A" flags = "0x2400"/>
+							</tr:TestData>
+							<tr:TestLimits>
+								<tr:Limits>
+									<c:LimitPair operator = "AND">
+										<c:Limit comparator = "GE">
+											<c:Datum nonStandardUnit = "A" value = "1.5" xsi:type="ts:TS_double" flags = "0x0000"/>
+										</c:Limit>
+										<c:Limit comparator = "LE">
+											<c:Datum nonStandardUnit = "A" value = "2.4" xsi:type="ts:TS_double" flags = "0x0000"/>
+										</c:Limit>
+									</c:LimitPair>
+									<c:Extension>
+										<ts:TSLimitProperties>
+											<ts:RawLimits>
+												<ts:Low value = "1.5" xsi:type="c:double" />
+												<ts:High value = "2.4" xsi:type="c:double" />
+											</ts:RawLimits>
+										</ts:TSLimitProperties>
+									</c:Extension>
+								</tr:Limits>
+							</tr:TestLimits>
+						</tr:TestResult>
+					</tr:Test>
+				</tr:TestGroup>
+			</tr:TestGroup>
+		</tr:TestGroup>
+		<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#Verify sensor" ID="380" callerName='Verify_sensor' testReferenceID="ID#:1xaqQrlC7hGCer468rYFnD" startDateTime = "2023-08-24T16:10:58.474"  endDateTime = "2023-08-24T16:10:58.638" >
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>SequenceCall</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='32'/>
+					<ts:TotalTime value='0.163918'/>
+					<ts:ModuleTime value='0.163675'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value="Passed" />
+			<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#Verify FW" ID="381" callerName='Verify FW' testReferenceID="ID#:J1muXF5A7hGCBTzp90RNgB" startDateTime = "2023-08-24T16:10:58.483"  endDateTime = "2023-08-24T16:10:58.633" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='0'/>
+						<ts:TotalTime value='0.1505'/>
+						<ts:ModuleTime value='0.150262'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="Passed" />
+				<tr:SessionAction ID = "382" name = "HYDRA_VERSION" startDateTime = "2023-08-24T16:10:58.627"  endDateTime = "2023-08-24T16:10:58.627"  testReferenceID="ID#:WIh5ul5A7hGCBTzp90RNgB">
+					<tr:Data>
+						<c:Collection>
+							<c:Item name = "ReportText">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+									<c:Value>vertex-9.2.0-dev-rc3-932600-0-g2e377120f43b</c:Value>
+								</c:Datum>
+							</c:Item>
+						</c:Collection>
+					</tr:Data>
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>Action</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='1'/>
+							<ts:TotalTime value='0.0004365'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:ActionOutcome value = "Done" />
+				</tr:SessionAction>
+				<tr:SessionAction ID = "383" name = "LASER_VERSION" startDateTime = "2023-08-24T16:10:58.629"  endDateTime = "2023-08-24T16:10:58.629"  testReferenceID="ID#:WYh5ul5A7hGCBTzp90RNgB">
+					<tr:Data>
+						<c:Collection>
+							<c:Item name = "ReportText">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+									<c:Value>vertex-9.2.0-dev-rc3-932600-0-g2e377120f43b</c:Value>
+								</c:Datum>
+							</c:Item>
+						</c:Collection>
+					</tr:Data>
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>Action</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='2'/>
+							<ts:TotalTime value='0.0004496'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:ActionOutcome value = "Done" />
+				</tr:SessionAction>
+				<tr:SessionAction ID = "384" name = "SYSTEM_VERSION" startDateTime = "2023-08-24T16:10:58.630"  endDateTime = "2023-08-24T16:10:58.630"  testReferenceID="ID#:Woh5ul5A7hGCBTzp90RNgB">
+					<tr:Data>
+						<c:Collection>
+							<c:Item name = "ReportText">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+									<c:Value>vertex-9.2.0-dev-rc3-932600-0-g2e377120f43b</c:Value>
+								</c:Datum>
+							</c:Item>
+						</c:Collection>
+					</tr:Data>
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>Action</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='3'/>
+							<ts:TotalTime value='0.0003421'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:ActionOutcome value = "Done" />
+				</tr:SessionAction>
+				<tr:SessionAction ID = "385" name = "FPGA_VERSION" startDateTime = "2023-08-24T16:10:58.630"  endDateTime = "2023-08-24T16:10:58.631"  testReferenceID="ID#:W4h5ul5A7hGCBTzp90RNgB">
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>Action</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='4'/>
+							<ts:TotalTime value='0.0001988'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:ActionOutcome value = "Done" />
+				</tr:SessionAction>
+				<tr:Test ID = "386" name = "FW_COMPARISON" startDateTime = "2023-08-24T16:10:58.631"  endDateTime = "2023-08-24T16:10:58.631"  testReferenceID="ID#:XIh5ul5A7hGCBTzp90RNgB">
+					<tr:Extension>
+						<ts:TSStepProperties>
+							<ts:StepType>PassFailTest</ts:StepType>
+							<ts:StepGroup>Main</ts:StepGroup>
+							<ts:BlockLevel value='0'/>
+							<ts:Index value='5'/>
+							<ts:TotalTime value='4.2e-06'/>
+						</ts:TSStepProperties>
+					</tr:Extension>
+					<tr:Outcome value = "NotStarted" />
+				</tr:Test>
+			</tr:TestGroup>
+		</tr:TestGroup>
+		<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#UUT_info" ID="387" callerName='UUT_info_reflectance' testReferenceID="ID#:mtPpUblC7hGCer468rYFnD" startDateTime = "2023-08-24T16:10:58.653"  endDateTime = "2023-08-24T16:10:58.735" >
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>SequenceCall</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='33'/>
+					<ts:TotalTime value='0.0823572'/>
+					<ts:ModuleTime value='0.0820535'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value="Passed" />
+			<tr:SessionAction ID = "388" name = "Define report path" startDateTime = "2023-08-24T16:10:58.662"  endDateTime = "2023-08-24T16:10:58.662"  testReferenceID="ID#:4/XRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>Statement</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='0'/>
+						<ts:TotalTime value='0.0003564'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:ActionOutcome value = "Done" />
+			</tr:SessionAction>
+			<tr:SessionAction ID = "389" name = "Create log file folder" startDateTime = "2023-08-24T16:10:58.665"  endDateTime = "2023-08-24T16:10:58.714"  testReferenceID="ID#:5PXRsstB7hGt86ihWW6d9A">
+				<tr:Data>
+					<c:Collection>
+						<c:Item name = "ExitCode">
+							<c:Datum value = "1" xsi:type="ts:TS_double" flags = "0x2000"/>
+						</c:Item>
+					</c:Collection>
+				</tr:Data>
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>CallExecutable</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='1'/>
+						<ts:TotalTime value='0.0497643'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:ActionOutcome value = "Done" />
+			</tr:SessionAction>
+			<tr:SessionAction ID = "390" name = "Define log file name" startDateTime = "2023-08-24T16:10:58.716"  endDateTime = "2023-08-24T16:10:58.716"  testReferenceID="ID#:5fXRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>Statement</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='2'/>
+						<ts:TotalTime value='0.0003751'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:ActionOutcome value = "Done" />
+			</tr:SessionAction>
+			<tr:Test ID = "391" name = "Load_tagfile_parameters" startDateTime = "2023-08-24T16:10:58.718"  endDateTime = "2023-08-24T16:10:58.718"  testReferenceID="ID#:5/XRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>NI_PropertyLoader</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='4'/>
+						<ts:TotalTime value='4.5e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "392" name = "If" startDateTime = "2023-08-24T16:10:58.720"  endDateTime = "2023-08-24T16:10:58.720"  testReferenceID="ID#:6PXRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>NI_Flow_If</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='5'/>
+						<ts:TotalTime value='4.3e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "393" name = "CSV file creator" startDateTime = "2023-08-24T16:10:58.721"  endDateTime = "2023-08-24T16:10:58.721"  testReferenceID="ID#:6fXRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>CallExecutable</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='6'/>
+						<ts:TotalTime value='4.9e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "394" name = "append_to file" startDateTime = "2023-08-24T16:10:58.722"  endDateTime = "2023-08-24T16:10:58.722"  testReferenceID="ID#:6vXRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>Action</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='7'/>
+						<ts:TotalTime value='7e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "395" name = "Else" startDateTime = "2023-08-24T16:10:58.723"  endDateTime = "2023-08-24T16:10:58.723"  testReferenceID="ID#:6/XRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>NI_Flow_Else</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='8'/>
+						<ts:TotalTime value='5.2e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "396" name = "time_stamp_population" startDateTime = "2023-08-24T16:10:58.724"  endDateTime = "2023-08-24T16:10:58.724"  testReferenceID="ID#:7PXRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>Statement</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='9'/>
+						<ts:TotalTime value='7.1e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "397" name = "time_stamp_2" startDateTime = "2023-08-24T16:10:58.725"  endDateTime = "2023-08-24T16:10:58.725"  testReferenceID="ID#:7fXRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>Statement</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='10'/>
+						<ts:TotalTime value='6.4e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "398" name = "CSV file creator" startDateTime = "2023-08-24T16:10:58.726"  endDateTime = "2023-08-24T16:10:58.726"  testReferenceID="ID#:7vXRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>CallExecutable</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='11'/>
+						<ts:TotalTime value='5.9e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "399" name = "append_to file" startDateTime = "2023-08-24T16:10:58.728"  endDateTime = "2023-08-24T16:10:58.728"  testReferenceID="ID#:7/XRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>Action</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='12'/>
+						<ts:TotalTime value='6.3e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "400" name = "save_test_tag_version" startDateTime = "2023-08-24T16:10:58.730"  endDateTime = "2023-08-24T16:10:58.730"  testReferenceID="ID#:8PXRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>Statement</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='13'/>
+						<ts:TotalTime value='4.6e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "401" name = "save_station_version" startDateTime = "2023-08-24T16:10:58.731"  endDateTime = "2023-08-24T16:10:58.731"  testReferenceID="ID#:8fXRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>Statement</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='14'/>
+						<ts:TotalTime value='6.2e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "402" name = "save_time_stamp" startDateTime = "2023-08-24T16:10:58.732"  endDateTime = "2023-08-24T16:10:58.732"  testReferenceID="ID#:8vXRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>Statement</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='15'/>
+						<ts:TotalTime value='5e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "403" name = "update time_stamp" startDateTime = "2023-08-24T16:10:58.733"  endDateTime = "2023-08-24T16:10:58.733"  testReferenceID="ID#:8/XRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>Action</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='16'/>
+						<ts:TotalTime value='4.3e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "404" name = "End" startDateTime = "2023-08-24T16:10:58.734"  endDateTime = "2023-08-24T16:10:58.734"  testReferenceID="ID#:9PXRsstB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>NI_Flow_End</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='17'/>
+						<ts:TotalTime value='6e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+		</tr:TestGroup>
+		<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#Low power scan pattern" ID="405" callerName='Load Low power scan pattern' testReferenceID="ID#:m9PpUblC7hGCer468rYFnD" startDateTime = "2023-08-24T16:10:58.747"  endDateTime = "2023-08-24T16:11:00.472" >
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>SequenceCall</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='34'/>
+					<ts:TotalTime value='1.72497'/>
+					<ts:ModuleTime value='1.72438'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value="Passed" />
+			<tr:Test ID = "406" name = "Create INI file" startDateTime = "2023-08-24T16:10:58.755"  endDateTime = "2023-08-24T16:10:58.755"  testReferenceID="ID#:1XFyf+1B7hGt9KihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>Action</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='0'/>
+						<ts:TotalTime value='1.02e-05'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:SessionAction ID = "407" name = "Load elevation ini" startDateTime = "2023-08-24T16:10:58.758"  endDateTime = "2023-08-24T16:11:00.468"  testReferenceID="ID#:1nFyf+1B7hGt9KihWW6d9A">
+				<tr:Data>
+					<c:Collection>
+						<c:Item name = "ExitCode">
+							<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+						</c:Item>
+					</c:Collection>
+				</tr:Data>
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>CallExecutable</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='1'/>
+						<ts:TotalTime value='1.71093'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:ActionOutcome value = "Done" />
+			</tr:SessionAction>
+		</tr:TestGroup>
+		<tr:SessionAction ID = "408" name = "Wait" startDateTime = "2023-08-24T16:11:00.488"  endDateTime = "2023-08-24T16:11:02.489"  testReferenceID="ID#:nNPpUblC7hGCer468rYFnD">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Wait</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='35'/>
+					<ts:TotalTime value='2.00051'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#Run sensor" ID="409" callerName='Run_sensor' testReferenceID="ID#:ndPpUblC7hGCer468rYFnD" startDateTime = "2023-08-24T16:11:02.490"  endDateTime = "2023-08-24T16:11:06.286" >
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>SequenceCall</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='36'/>
+					<ts:TotalTime value='3.79598'/>
+					<ts:ModuleTime value='3.79575'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value="Passed" />
+			<tr:Test name="Config registers" ID="410" testReferenceID="ID#:SoAQistB7hGt86ihWW6d9A" startDateTime = "2023-08-24T16:11:02.502"  endDateTime = "2023-08-24T16:11:02.502" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='4'/>
+						<ts:TotalTime value='4.2e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="NotStarted" />
+			</tr:Test>
+			<tr:Test name="Config FOV" ID="411" testReferenceID="ID#:S4AQistB7hGt86ihWW6d9A" startDateTime = "2023-08-24T16:11:02.503"  endDateTime = "2023-08-24T16:11:02.503" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='5'/>
+						<ts:TotalTime value='5.4e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="NotStarted" />
+			</tr:Test>
+			<tr:Test name="Config Laser Power" ID="412" testReferenceID="ID#:TIAQistB7hGt86ihWW6d9A" startDateTime = "2023-08-24T16:11:02.504"  endDateTime = "2023-08-24T16:11:02.504" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='6'/>
+						<ts:TotalTime value='4.8e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="NotStarted" />
+			</tr:Test>
+			<tr:Test name="Config eclipses" ID="413" testReferenceID="ID#:TYAQistB7hGt86ihWW6d9A" startDateTime = "2023-08-24T16:11:02.505"  endDateTime = "2023-08-24T16:11:02.505" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='7'/>
+						<ts:TotalTime value='5.2e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "414" name = "Envision Screenshot" startDateTime = "2023-08-24T16:11:02.505"  endDateTime = "2023-08-24T16:11:02.505"  testReferenceID="ID#:ToAQistB7hGt86ihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>MessagePopup</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='8'/>
+						<ts:TotalTime value='5.4e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test name="Pcap_capture" ID="415" testReferenceID="ID#:UIAQistB7hGt86ihWW6d9A" startDateTime = "2023-08-24T16:11:02.507"  endDateTime = "2023-08-24T16:11:06.273" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='10'/>
+						<ts:TotalTime value='3.76639'/>
+						<ts:ModuleTime value='3.76612'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="Passed" />
+			</tr:Test>
+		</tr:TestGroup>
+		<tr:SessionAction ID = "416" name = "Wait" startDateTime = "2023-08-24T16:11:06.304"  endDateTime = "2023-08-24T16:11:08.305"  testReferenceID="ID#:ntPpUblC7hGCer468rYFnD">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Wait</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='37'/>
+					<ts:TotalTime value='2.00093'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#High power scan pattern" ID="417" callerName='Load High power scan pattern' testReferenceID="ID#:n9PpUblC7hGCer468rYFnD" startDateTime = "2023-08-24T16:11:08.306"  endDateTime = "2023-08-24T16:11:09.909" >
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>SequenceCall</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='38'/>
+					<ts:TotalTime value='1.60287'/>
+					<ts:ModuleTime value='1.60256'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value="Passed" />
+			<tr:Test ID = "418" name = "Create INI file" startDateTime = "2023-08-24T16:11:08.317"  endDateTime = "2023-08-24T16:11:08.317"  testReferenceID="ID#:xdhsc55C7hGt9KihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>Action</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='0'/>
+						<ts:TotalTime value='1.17e-05'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:SessionAction ID = "419" name = "Load elevation ini" startDateTime = "2023-08-24T16:11:08.317"  endDateTime = "2023-08-24T16:11:09.907"  testReferenceID="ID#:xthsc55C7hGt9KihWW6d9A">
+				<tr:Data>
+					<c:Collection>
+						<c:Item name = "ExitCode">
+							<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+						</c:Item>
+					</c:Collection>
+				</tr:Data>
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>CallExecutable</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='1'/>
+						<ts:TotalTime value='1.5895'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:ActionOutcome value = "Done" />
+			</tr:SessionAction>
+		</tr:TestGroup>
+		<tr:SessionAction ID = "420" name = "Wait" startDateTime = "2023-08-24T16:11:09.925"  endDateTime = "2023-08-24T16:11:11.926"  testReferenceID="ID#:oNPpUblC7hGCer468rYFnD">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Wait</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='39'/>
+					<ts:TotalTime value='2.00076'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#Run sensor_2" ID="421" callerName='Pcap_collection_2' testReferenceID="ID#:odPpUblC7hGCer468rYFnD" startDateTime = "2023-08-24T16:11:11.927"  endDateTime = "2023-08-24T16:11:16.236" >
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>SequenceCall</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='40'/>
+					<ts:TotalTime value='4.30912'/>
+					<ts:ModuleTime value='4.30887'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value="Passed" />
+			<tr:Test name="Config registers" ID="422" testReferenceID="ID#:eR1YW6NC7hGt9KihWW6d9A" startDateTime = "2023-08-24T16:11:11.946"  endDateTime = "2023-08-24T16:11:11.946" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='4'/>
+						<ts:TotalTime value='6e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="NotStarted" />
+			</tr:Test>
+			<tr:Test name="Config FOV" ID="423" testReferenceID="ID#:eh1YW6NC7hGt9KihWW6d9A" startDateTime = "2023-08-24T16:11:11.947"  endDateTime = "2023-08-24T16:11:11.947" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='5'/>
+						<ts:TotalTime value='5.9e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="NotStarted" />
+			</tr:Test>
+			<tr:Test name="Config Laser Power" ID="424" testReferenceID="ID#:ex1YW6NC7hGt9KihWW6d9A" startDateTime = "2023-08-24T16:11:11.948"  endDateTime = "2023-08-24T16:11:11.948" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='6'/>
+						<ts:TotalTime value='5.2e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="NotStarted" />
+			</tr:Test>
+			<tr:Test name="Config eclipses" ID="425" testReferenceID="ID#:fB1YW6NC7hGt9KihWW6d9A" startDateTime = "2023-08-24T16:11:11.948"  endDateTime = "2023-08-24T16:11:11.948" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='7'/>
+						<ts:TotalTime value='4.9e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="NotStarted" />
+			</tr:Test>
+			<tr:Test ID = "426" name = "Envision Screenshot" startDateTime = "2023-08-24T16:11:11.949"  endDateTime = "2023-08-24T16:11:11.949"  testReferenceID="ID#:fR1YW6NC7hGt9KihWW6d9A">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>MessagePopup</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='8'/>
+						<ts:TotalTime value='5.2e-06'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "NotStarted" />
+			</tr:Test>
+			<tr:Test name="Pcap_capture_2" ID="427" testReferenceID="ID#:fx1YW6NC7hGt9KihWW6d9A" startDateTime = "2023-08-24T16:11:11.951"  endDateTime = "2023-08-24T16:11:16.223" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='10'/>
+						<ts:TotalTime value='4.2725'/>
+						<ts:ModuleTime value='4.27222'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="Passed" />
+			</tr:Test>
+		</tr:TestGroup>
+		<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#Wait and validate Power" ID="428" callerName='STANDBY_CURRENT' testReferenceID="ID#:2Ctbwe1A7hGCBTzp90RNgB" startDateTime = "2023-08-24T16:11:16.401"  endDateTime = "2023-08-24T16:11:16.684" >
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>SequenceCall</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='45'/>
+					<ts:TotalTime value='0.282928'/>
+					<ts:ModuleTime value='0.282746'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value="Passed" />
+			<tr:Test ID = "429" name = "STANDBY_CURRENT_2" startDateTime = "2023-08-24T16:11:16.683"  endDateTime = "2023-08-24T16:11:16.683"  testReferenceID="ID#:9sdNz11A7hGCBTzp90RNgB">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>NumericLimitTest</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='7'/>
+						<ts:TotalTime value='0.0003907'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value = "Passed" />
+				<tr:TestResult ID = "tr-6244cf41-42ba-11ee-827a-be3af2b6059f" name = "Numeric">
+					<tr:TestData>
+						<c:Datum value = "0.7236668" xsi:type="ts:TS_double" nonStandardUnit="A" flags = "0x2400"/>
+					</tr:TestData>
+					<tr:TestLimits>
+						<tr:Limits>
+							<c:LimitPair operator = "AND">
+								<c:Limit comparator = "GE">
+									<c:Datum nonStandardUnit = "A" value = "0.7" xsi:type="ts:TS_double" flags = "0x0000"/>
+								</c:Limit>
+								<c:Limit comparator = "LE">
+									<c:Datum nonStandardUnit = "A" value = "1.1" xsi:type="ts:TS_double" flags = "0x0000"/>
+								</c:Limit>
+							</c:LimitPair>
+							<c:Extension>
+								<ts:TSLimitProperties>
+									<ts:RawLimits>
+										<ts:Low value = "0.7" xsi:type="c:double" />
+										<ts:High value = "1.1" xsi:type="c:double" />
+									</ts:RawLimits>
+								</ts:TSLimitProperties>
+							</c:Extension>
+						</tr:Limits>
+					</tr:TestLimits>
+				</tr:TestResult>
+			</tr:Test>
+		</tr:TestGroup>
+		<tr:SessionAction ID = "431" name = "Stop_UDP_Multicast" startDateTime = "2023-08-24T16:11:16.724"  endDateTime = "2023-08-24T16:11:16.725"  testReferenceID="ID#:2itbwe1A7hGCBTzp90RNgB">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Statement</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='47'/>
+					<ts:TotalTime value='0.0002925'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:TestGroup name="C:\luminartech\P99.9_LPDC\LPDC.seq#MES_Cleanup" ID="432" callerName='MES_Cleanup' testReferenceID="ID#:2ytbwe1A7hGCBTzp90RNgB" startDateTime = "2023-08-24T16:11:16.725"  endDateTime = "2023-08-24T16:11:16.826" >
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>SequenceCall</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='48'/>
+					<ts:TotalTime value='0.10017'/>
+					<ts:ModuleTime value='0.0999365'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value="Passed" />
+			<tr:Test name="Get End Time" ID="433" testReferenceID="ID#:LvhvDu5A7hGCBTzp90RNgB" startDateTime = "2023-08-24T16:11:16.735"  endDateTime = "2023-08-24T16:11:16.760" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='1'/>
+						<ts:TotalTime value='0.0242026'/>
+						<ts:ModuleTime value='0.0239565'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="Passed" />
+			</tr:Test>
+			<tr:Test name="Get Test Result" ID="434" testReferenceID="ID#:L/hvDu5A7hGCBTzp90RNgB" startDateTime = "2023-08-24T16:11:16.773"  endDateTime = "2023-08-24T16:11:16.794" >
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>SequenceCall</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='2'/>
+						<ts:TotalTime value='0.020152'/>
+						<ts:ModuleTime value='0.0199317'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:Outcome value="Passed" />
+			</tr:Test>
+			<tr:SessionAction ID = "435" name = "MES Generate XML" startDateTime = "2023-08-24T16:11:16.812"  endDateTime = "2023-08-24T16:11:16.814"  testReferenceID="ID#:PPhvDu5A7hGCBTzp90RNgB">
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>Action</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='1'/>
+						<ts:Index value='15'/>
+						<ts:TotalTime value='0.0014085'/>
+						<ts:ModuleTime value='0.001138'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:ActionOutcome value = "Done" />
+			</tr:SessionAction>
+			<tr:SessionAction ID = "436" name = "MES Values" startDateTime = "2023-08-24T16:11:16.815"  endDateTime = "2023-08-24T16:11:16.815"  testReferenceID="ID#:PvhvDu5A7hGCBTzp90RNgB">
+				<tr:Data>
+					<c:Collection>
+						<c:Item name = "Header">
+							<c:Collection xsi:type="ts:TS_Collection" flags = "0x2000">
+								<c:Item name = "Ticket">
+									<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+										<c:Value>00000000000000000</c:Value>
+									</c:Datum>
+								</c:Item>
+								<c:Item name = "SerialNumber">
+									<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+										<c:Value>60046620082308A000555</c:Value>
+									</c:Datum>
+								</c:Item>
+								<c:Item name = "Station">
+									<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+										<c:Value>LPDC</c:Value>
+									</c:Datum>
+								</c:Item>
+								<c:Item name = "TesterName">
+									<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+										<c:Value>L3LUMMFG161</c:Value>
+									</c:Datum>
+								</c:Item>
+								<c:Item name = "User">
+									<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+										<c:Value>CMXFTC</c:Value>
+									</c:Datum>
+								</c:Item>
+								<c:Item name = "Result">
+									<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+										<c:Value>P</c:Value>
+									</c:Datum>
+								</c:Item>
+								<c:Item name = "Description">
+									<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+										<c:Value>LPDC_SV2_L1</c:Value>
+									</c:Datum>
+								</c:Item>
+							</c:Collection>
+						</c:Item>
+						<c:Item name = "Results">
+							<c:Collection xsi:type="ts:TS_Collection" flags = "0x2000">
+								<c:Item name = "Results[0]">
+									<c:Collection xsi:type="ts:TS_Collection" flags = "0x0000">
+										<c:Item name = "Name">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>FAMILY</c:Value>
+											</c:Datum>
+										</c:Item>
+										<c:Item name = "ValueInStr">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>Iris Slim</c:Value>
+											</c:Datum>
+										</c:Item>
+										<c:Item name = "PassFailResult">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value></c:Value>
+											</c:Datum>
+										</c:Item>
+									</c:Collection>
+								</c:Item>
+								<c:Item name = "Results[1]">
+									<c:Collection xsi:type="ts:TS_Collection" flags = "0x0000">
+										<c:Item name = "Name">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>REVISION</c:Value>
+											</c:Datum>
+										</c:Item>
+										<c:Item name = "ValueInStr">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>V2</c:Value>
+											</c:Datum>
+										</c:Item>
+										<c:Item name = "PassFailResult">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value></c:Value>
+											</c:Datum>
+										</c:Item>
+									</c:Collection>
+								</c:Item>
+								<c:Item name = "Results[2]">
+									<c:Collection xsi:type="ts:TS_Collection" flags = "0x0000">
+										<c:Item name = "Name">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>FIXTURE</c:Value>
+											</c:Datum>
+										</c:Item>
+										<c:Item name = "ValueInStr">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>TCU_001</c:Value>
+											</c:Datum>
+										</c:Item>
+										<c:Item name = "PassFailResult">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value></c:Value>
+											</c:Datum>
+										</c:Item>
+									</c:Collection>
+								</c:Item>
+								<c:Item name = "Results[3]">
+									<c:Collection xsi:type="ts:TS_Collection" flags = "0x0000">
+										<c:Item name = "Name">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>SOCKET</c:Value>
+											</c:Datum>
+										</c:Item>
+										<c:Item name = "ValueInStr">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>001</c:Value>
+											</c:Datum>
+										</c:Item>
+										<c:Item name = "PassFailResult">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value></c:Value>
+											</c:Datum>
+										</c:Item>
+									</c:Collection>
+								</c:Item>
+								<c:Item name = "Results[4]">
+									<c:Collection xsi:type="ts:TS_Collection" flags = "0x0000">
+										<c:Item name = "Name">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>SEQUENCE_NAME</c:Value>
+											</c:Datum>
+										</c:Item>
+										<c:Item name = "ValueInStr">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>LPDC.seq</c:Value>
+											</c:Datum>
+										</c:Item>
+										<c:Item name = "PassFailResult">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value></c:Value>
+											</c:Datum>
+										</c:Item>
+									</c:Collection>
+								</c:Item>
+								<c:Item name = "Results[5]">
+									<c:Collection xsi:type="ts:TS_Collection" flags = "0x0000">
+										<c:Item name = "Name">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>START_TIME</c:Value>
+											</c:Datum>
+										</c:Item>
+										<c:Item name = "ValueInStr">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>2023-08-24-16-07-33</c:Value>
+											</c:Datum>
+										</c:Item>
+										<c:Item name = "PassFailResult">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value></c:Value>
+											</c:Datum>
+										</c:Item>
+									</c:Collection>
+								</c:Item>
+								<c:Item name = "Results[6]">
+									<c:Collection xsi:type="ts:TS_Collection" flags = "0x0000">
+										<c:Item name = "Name">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>END_TIME</c:Value>
+											</c:Datum>
+										</c:Item>
+										<c:Item name = "ValueInStr">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>2023-08-24-16-11-16</c:Value>
+											</c:Datum>
+										</c:Item>
+										<c:Item name = "PassFailResult">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value></c:Value>
+											</c:Datum>
+										</c:Item>
+									</c:Collection>
+								</c:Item>
+								<c:Item name = "Results[7]">
+									<c:Collection xsi:type="ts:TS_Collection" flags = "0x0000">
+										<c:Item name = "Name">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>STANDBY_CURRENT_1</c:Value>
+											</c:Datum>
+										</c:Item>
+										<c:Item name = "ValueInStr">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>0.7023087</c:Value>
+											</c:Datum>
+										</c:Item>
+										<c:Item name = "PassFailResult">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>Passed</c:Value>
+											</c:Datum>
+										</c:Item>
+									</c:Collection>
+								</c:Item>
+								<c:Item name = "Results[8]">
+									<c:Collection xsi:type="ts:TS_Collection" flags = "0x0000">
+										<c:Item name = "Name">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>OPERATION_CURRENT_STANDBY</c:Value>
+											</c:Datum>
+										</c:Item>
+										<c:Item name = "ValueInStr">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>1.594037</c:Value>
+											</c:Datum>
+										</c:Item>
+										<c:Item name = "PassFailResult">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>Passed</c:Value>
+											</c:Datum>
+										</c:Item>
+									</c:Collection>
+								</c:Item>
+								<c:Item name = "Results[9]">
+									<c:Collection xsi:type="ts:TS_Collection" flags = "0x0000">
+										<c:Item name = "Name">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>STANDBY_CURRENT_1</c:Value>
+											</c:Datum>
+										</c:Item>
+										<c:Item name = "ValueInStr">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>0.7058515</c:Value>
+											</c:Datum>
+										</c:Item>
+										<c:Item name = "PassFailResult">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>Passed</c:Value>
+											</c:Datum>
+										</c:Item>
+									</c:Collection>
+								</c:Item>
+								<c:Item name = "Results[10]">
+									<c:Collection xsi:type="ts:TS_Collection" flags = "0x0000">
+										<c:Item name = "Name">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>OPERATION_CURRENT</c:Value>
+											</c:Datum>
+										</c:Item>
+										<c:Item name = "ValueInStr">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>1.562499</c:Value>
+											</c:Datum>
+										</c:Item>
+										<c:Item name = "PassFailResult">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>Passed</c:Value>
+											</c:Datum>
+										</c:Item>
+									</c:Collection>
+								</c:Item>
+								<c:Item name = "Results[11]">
+									<c:Collection xsi:type="ts:TS_Collection" flags = "0x0000">
+										<c:Item name = "Name">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>STANDBY_CURRENT_1</c:Value>
+											</c:Datum>
+										</c:Item>
+										<c:Item name = "ValueInStr">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>0.7130191</c:Value>
+											</c:Datum>
+										</c:Item>
+										<c:Item name = "PassFailResult">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>Passed</c:Value>
+											</c:Datum>
+										</c:Item>
+									</c:Collection>
+								</c:Item>
+								<c:Item name = "Results[12]">
+									<c:Collection xsi:type="ts:TS_Collection" flags = "0x0000">
+										<c:Item name = "Name">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>OPERATION_CURRENT</c:Value>
+											</c:Datum>
+										</c:Item>
+										<c:Item name = "ValueInStr">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>1.555544</c:Value>
+											</c:Datum>
+										</c:Item>
+										<c:Item name = "PassFailResult">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>Passed</c:Value>
+											</c:Datum>
+										</c:Item>
+									</c:Collection>
+								</c:Item>
+								<c:Item name = "Results[13]">
+									<c:Collection xsi:type="ts:TS_Collection" flags = "0x0000">
+										<c:Item name = "Name">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>STANDBY_CURRENT_2</c:Value>
+											</c:Datum>
+										</c:Item>
+										<c:Item name = "ValueInStr">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>0.7236668</c:Value>
+											</c:Datum>
+										</c:Item>
+										<c:Item name = "PassFailResult">
+											<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+												<c:Value>Passed</c:Value>
+											</c:Datum>
+										</c:Item>
+									</c:Collection>
+								</c:Item>
+							</c:Collection>
+						</c:Item>
+					</c:Collection>
+				</tr:Data>
+				<tr:Extension>
+					<ts:TSStepProperties>
+						<ts:StepType>AdditionalResults</ts:StepType>
+						<ts:StepGroup>Main</ts:StepGroup>
+						<ts:BlockLevel value='0'/>
+						<ts:Index value='17'/>
+						<ts:TotalTime value='0.0001836'/>
+					</ts:TSStepProperties>
+				</tr:Extension>
+				<tr:ActionOutcome value = "Done" />
+			</tr:SessionAction>
+		</tr:TestGroup>
+	</tr:ResultSet>
+	<tr:TestProgram>
+		<c:SerialNumber>
+			L3LUMMFG161
+		</c:SerialNumber>
+			</tr:TestProgram>
+	<tr:TestStation>
+		<c:SerialNumber>L3LUMMFG161</c:SerialNumber>
+	</tr:TestStation>
+	<tr:UUT>
+		<c:SerialNumber>60-0466-20082308A000555</c:SerialNumber>
+	</tr:UUT>
+	<tr:Extension>
+		<ts:TSResultSetProperties>
+			<ts:NumOfResults value = '175'/>
+		</ts:TSResultSetProperties>
+		<ts:TS_Configuration>
+				<c:Collection xsi:type="ts:TS_Collection" flags = "0x0000">
+					<c:Item name = "IncludeTSExtensionElements">
+						<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "IncludeAttributes">
+						<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "IncludeLimits">
+						<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "IncludeMeasurements">
+						<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "IncludeArrayMeasurement">
+						<c:Datum value = "2" xsi:type="ts:TS_double" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "ArrayMeasurementFilter">
+						<c:Datum value = "3" xsi:type="ts:TS_double" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "ArrayMeasurementMax">
+						<c:Datum value = "100" xsi:type="ts:TS_double" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "IncludeTimes">
+						<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "Format">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+							<c:Value>xml</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "NumericFormat">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+							<c:Value>%$.13g</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ResultFilterExpression">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+							<c:Value>True</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "GeneratePath">
+						<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "UseTemporaryFile">
+						<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "UseSequenceFileNameAsPrefix">
+						<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "AddTimeAndDateToFileName">
+						<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "NewFileNameForEachUUT">
+						<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "ForceFileNameToBeUnique">
+						<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "AppendToFileIfItExists">
+						<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "DirectoryType">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+							<c:Value>SpecifyByExpression</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Directory">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+							<c:Value></c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "BaseName">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+							<c:Value>Report</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "UseFormatForExtension">
+						<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "Extension">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+							<c:Value></c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ReportFilePath">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+							<c:Value></c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "DisableReportGeneration">
+						<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "IncludeStepResults">
+						<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "BodyGenerator">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+							<c:Value>DLL</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Colors">
+						<c:Collection xsi:type="ts:TS_Collection" flags = "0x0000">
+							<c:Item name = "LabelBg">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+									<c:Value>#FFFFFF</c:Value>
+								</c:Datum>
+							</c:Item>
+							<c:Item name = "ValueBg">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+									<c:Value>#32FFFF</c:Value>
+								</c:Datum>
+							</c:Item>
+							<c:Item name = "UUTSeparator">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+									<c:Value>#0000E0</c:Value>
+								</c:Datum>
+							</c:Item>
+							<c:Item name = "HeaderSeparator">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+									<c:Value>#8000CC</c:Value>
+								</c:Datum>
+							</c:Item>
+							<c:Item name = "TableBorder">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+									<c:Value>#000000</c:Value>
+								</c:Datum>
+							</c:Item>
+							<c:Item name = "MainBg">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+									<c:Value>#00C4C4</c:Value>
+								</c:Datum>
+							</c:Item>
+							<c:Item name = "SetupBg">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+									<c:Value>#FF8000</c:Value>
+								</c:Datum>
+							</c:Item>
+							<c:Item name = "CleanupBg">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+									<c:Value>#ADD8E6</c:Value>
+								</c:Datum>
+							</c:Item>
+							<c:Item name = "ReportTextBg">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+									<c:Value>#FF32CC</c:Value>
+								</c:Datum>
+							</c:Item>
+							<c:Item name = "Terminated">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+									<c:Value>#000080</c:Value>
+								</c:Datum>
+							</c:Item>
+							<c:Item name = "Failed">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+									<c:Value>#FF0000</c:Value>
+								</c:Datum>
+							</c:Item>
+							<c:Item name = "Error">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+									<c:Value>#FF0000</c:Value>
+								</c:Datum>
+							</c:Item>
+							<c:Item name = "Passed">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+									<c:Value>#008000</c:Value>
+								</c:Datum>
+							</c:Item>
+							<c:Item name = "Skipped">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+									<c:Value>#B98028</c:Value>
+								</c:Datum>
+							</c:Item>
+							<c:Item name = "Done">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+									<c:Value>#008000</c:Value>
+								</c:Datum>
+							</c:Item>
+							<c:Item name = "Running">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+									<c:Value>#FFCC33</c:Value>
+								</c:Datum>
+							</c:Item>
+							<c:Item name = "TerminatedBg">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+									<c:Value>#0000FF</c:Value>
+								</c:Datum>
+							</c:Item>
+							<c:Item name = "FailedBg">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+									<c:Value>#FF0000</c:Value>
+								</c:Datum>
+							</c:Item>
+							<c:Item name = "ErrorBg">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+									<c:Value>#FF0000</c:Value>
+								</c:Datum>
+							</c:Item>
+							<c:Item name = "PassedBg">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+									<c:Value>#00FF00</c:Value>
+								</c:Datum>
+							</c:Item>
+							<c:Item name = "SkippedBg">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+									<c:Value>#FFFF00</c:Value>
+								</c:Datum>
+							</c:Item>
+							<c:Item name = "DoneBg">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+									<c:Value>#00FFCC</c:Value>
+								</c:Datum>
+							</c:Item>
+							<c:Item name = "RunningBg">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+									<c:Value>#FFCC33</c:Value>
+								</c:Datum>
+							</c:Item>
+							<c:Item name = "FailureStackLabelBg">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+									<c:Value>#FF2020</c:Value>
+								</c:Datum>
+							</c:Item>
+							<c:Item name = "FailureStackValueBg">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+									<c:Value>#D0D0D0</c:Value>
+								</c:Datum>
+							</c:Item>
+							<c:Item name = "BatchHeadingBg">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+									<c:Value>#00C4C4</c:Value>
+								</c:Datum>
+							</c:Item>
+						</c:Collection>
+					</c:Item>
+					<c:Item name = "DateAndTimeFormat">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+							<c:Value>TimeFirst</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "NewFileNameForEachBatch">
+						<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "NewBatchFileNameForEachBatch">
+						<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "NewFileNameForEachTestSocket">
+						<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "StoreUUTReportWithBatchReport">
+						<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "BatchBaseName">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+							<c:Value>BatchReport</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "LabelSize">
+						<c:Datum value = "26" xsi:type="ts:TS_double" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "RelStylesheetPath">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+							<c:Value>tr6_horizontal.xsl</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "StylesheetPath">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+							<c:Value>C:\Program Files\National Instruments\TestStand 2017\Components\Models\TestStandModels\ATML\StyleSheets\tr6_horizontal.xsl</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "StylesheetMRU">
+						<c:IndexedArray dimensions="[5]" lowerBounds="[0]" upperBounds="[4]" xsi:type="ts:TS_stringArray" flags = "0x0000">
+							<ts:Element position ="[0]">
+								<c:Value>horizontal.xsl</c:Value>
+							</ts:Element>
+							<ts:Element position ="[1]">
+								<c:Value>report.xsl</c:Value>
+							</ts:Element>
+							<ts:Element position ="[2]">
+								<c:Value>expand.xsl</c:Value>
+							</ts:Element>
+							<ts:Element position ="[3]">
+								<c:Value></c:Value>
+							</ts:Element>
+							<ts:Element position ="[4]">
+								<c:Value></c:Value>
+							</ts:Element>
+						</c:IndexedArray>
+					</c:Item>
+					<c:Item name = "ATMLStylesheetMRU">
+						<c:IndexedArray dimensions="[3]" lowerBounds="[0]" upperBounds="[2]" xsi:type="ts:TS_stringArray" flags = "0x0000">
+							<ts:Element position ="[0]">
+								<c:Value>TR_horizontal.xsl</c:Value>
+							</ts:Element>
+							<ts:Element position ="[1]">
+								<c:Value>trml.xsl</c:Value>
+							</ts:Element>
+							<ts:Element position ="[2]">
+								<c:Value></c:Value>
+							</ts:Element>
+						</c:IndexedArray>
+					</c:Item>
+					<c:Item name = "StoreStylesheetAbsolutePath">
+						<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "ProcessOnTheFly">
+						<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "PurgeOnTheFlyResults">
+						<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "IncludeStepResultComments">
+						<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "UseLocalizedDecimalPoint">
+						<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "ReportStyle">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+							<c:Value>ATML6</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ReportFileSequentialModelExpression">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+							<c:Value>"$(ClientFileDir)\\Results\\$(UUT)\\$(UUT)_$(ClientFileName)_Report[$(FileTime)][$(FileDate)]_$$(UUTStatus).$(FileExtension)"</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ReportFileParallelModelExpression">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+							<c:Value>"$(ClientFileDir)\\$(ClientFileName)_Report[$(FileTime)][$(FileDate)]$(Unique).$(FileExtension)"</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ReportFileBatchModelExpression">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+							<c:Value>"$(ClientFileDir)\\$(ClientFileName)_BatchReport[$(FileTime)][$(FileDate)]$(Unique).$(FileExtension)"</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "BatchFileBatchModelExpression">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+							<c:Value>"$(ClientFileDir)\\$(ClientFileName)_BatchReport[$(FileTime)][$(FileDate)]$(Unique).$(FileExtension)"</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "NewFileNameForEachUUTStatus">
+						<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "ReportPathMacroListString">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+							<c:Value>$(CLIENTFILEDIR)$(UUT)$(UUT)$(CLIENTFILENAME)$(FILETIME)$(FILEDATE)$(UUTSTATUS)$(FILEEXTENSION)</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "BatchReportPathMacroListString">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+							<c:Value></c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "CheckIfMacroListIsUnchanged">
+						<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+					</c:Item>
+					<c:Item name = "ATML5StylesheetMRU">
+						<c:IndexedArray dimensions="[3]" lowerBounds="[0]" upperBounds="[2]" xsi:type="ts:TS_stringArray" flags = "0x0000">
+							<ts:Element position ="[0]">
+								<c:Value>tr5_horizontal.xsl</c:Value>
+							</ts:Element>
+							<ts:Element position ="[1]">
+								<c:Value>tr5_report.xsl</c:Value>
+							</ts:Element>
+							<ts:Element position ="[2]">
+								<c:Value>tr5_expand.xsl</c:Value>
+							</ts:Element>
+						</c:IndexedArray>
+					</c:Item>
+					<c:Item name = "Atml_Rpt_Options">
+						<c:Collection xsi:type="ts:TS_Collection" flags = "0x0000">
+							<c:Item name = "AddReportText">
+								<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+							</c:Item>
+							<c:Item name = "ExtensionDLLAbsolutePath">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+									<c:Value></c:Value>
+								</c:Datum>
+							</c:Item>
+							<c:Item name = "TestResultsSchemaPath">
+								<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+									<c:Value></c:Value>
+								</c:Datum>
+							</c:Item>
+						</c:Collection>
+					</c:Item>
+					<c:Item name = "ATML6StylesheetMRU">
+						<c:IndexedArray dimensions="[3]" lowerBounds="[0]" upperBounds="[2]" xsi:type="ts:TS_stringArray" flags = "0x0000">
+							<ts:Element position ="[0]">
+								<c:Value>tr6_horizontal.xsl</c:Value>
+							</ts:Element>
+							<ts:Element position ="[1]">
+								<c:Value>tr6_report.xsl</c:Value>
+							</ts:Element>
+							<ts:Element position ="[2]">
+								<c:Value>tr6_expand.xsl</c:Value>
+							</ts:Element>
+						</c:IndexedArray>
+					</c:Item>
+				</c:Collection>
+		</ts:TS_Configuration>
+	</tr:Extension>
+</trc:TestResults>
+</trc:TestResultsCollection>

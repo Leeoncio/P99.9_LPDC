@@ -1,0 +1,119 @@
+eennaabbllee  ppuullssee
+
+Enable signal output pulsed, 13.5V 200ms
+-->ddiissaabbllee  ppuullssee
+
+Illegal command: disable pulse
+-->hheellpp
+
+Help for  help
+            PREssure  : Pressure drop across the heatsink (Pa)
+              BLOwer  : Blower fan commands
+              ENable  : Enable commands
+                Temp  : Temperature commands
+               DEBUG  : TCU Debug commands
+-->hheellpp  EEnn
+
+Help for  help En
+            PREssure  : Pressure drop across the heatsink (Pa)
+              BLOwer  : Blower fan commands
+              ENable  : Enable commands
+                Temp  : Temperature commands
+               DEBUG  : TCU Debug commands
+-->hheellpp  EENNaabbllee
+
+Help for  help ENable
+            PREssure  : Pressure drop across the heatsink (Pa)
+              BLOwer  : Blower fan commands
+              ENable  : Enable commands
+                Temp  : Temperature commands
+               DEBUG  : TCU Debug commands
+-->EENN
+
+Help for  EN
+               Pulse  : Pulse enable output for 200ms at 13.5V
+          CONTinuous  : Hold enable output at 13.5V continuously
+                 OFF  : Turn enable off
+-->DDEEBBUUGG
+
+Help for  DEBUG
+                   J  : Dumps the ADC results
+             CONsole  : Debug dump of console
+-->DDEEUUBB  JJ
+
+Illegal command: DEUB J
+-->DDEEBBUUGG  JJ
+
+VMON-VIN        = 11.894V
+IMON-GAIN       = -0.200V/A
+IMON-OUTPUT     = -20.432mA
+OUTPUT_POWER    = -0.243W
+VMON-5V7        = 5.636V
+VMON-2V5-REF    = 2.500V
+VMON-13V5       = 13.468V
+IMON_TCU        = 341.813mA
+TCU_POWER       = 4.604W
+VMON_BLOWER     = 13.372V
+SCALEDCOREVCC   = 1.208V
+SCALEDIOVCC     = 3.326V
+DAC             = 0.218V
+PTC             = 0.795V
+-----
+Temp Inlet      = 18.937 deg C
+Temp Outlet     = 19.187 deg C
+Temp Ext        = -50.000 deg C
+Temp Int        = -50.000 deg C
+-----
+Pressure (raw)  = 47.611Pa
+Pressure offset = -4.208Pa
+Pressure (cal)  = 51.820Pa
+-----
+I2C Error Count = 0
+I2C Error Code  = 0
+I2C Busy Count  = 1
+-->  EENNAALLEE  OOFFFF
+
+Illegal command: ENALE OFF
+-->EENNAABBLLEE00FFFF
+
+Illegal command: ENABLE0FF
+-->EENNAABBLLEE  OOFFFF
+
+Enable signal output cleared
+-->DDEEBBUUGG  JJ
+
+VMON-VIN        = 11.907V
+IMON-GAIN       = -0.200V/A
+IMON-OUTPUT     = -10.571mA
+OUTPUT_POWER    = -0.126W
+VMON-5V7        = 5.631V
+VMON-2V5-REF    = 2.499V
+VMON-13V5       = 13.447V
+IMON_TCU        = 339.504mA
+TCU_POWER       = 4.565W
+VMON_BLOWER     = 13.371V
+SCALEDCOREVCC   = 1.207V
+SCALEDIOVCC     = 3.320V
+DAC             = 0.218V
+PTC             = 0.808V
+-----
+Temp Inlet      = 19.000 deg C
+Temp Outlet     = 19.312 deg C
+Temp Ext        = -50.000 deg C
+Temp Int        = -50.000 deg C
+-----
+Pressure (raw)  = 44.543Pa
+Pressure offset = -4.208Pa
+Pressure (cal)  = 48.751Pa
+-----
+I2C Error Count = 0
+I2C Error Code  = 0
+I2C Busy Count  = 1
+
+-->EENN  PPUULLSSEE
+
+Enable signal output pulsed, 13.5V 200ms
+-->EENNAABBLLEE  PPUULLSSEE
+
+Enable signal output pulsed, 13.5V 200ms
+-->

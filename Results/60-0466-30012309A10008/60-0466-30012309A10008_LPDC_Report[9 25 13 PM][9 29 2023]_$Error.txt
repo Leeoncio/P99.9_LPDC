@@ -1,0 +1,497 @@
+********************************************************************************
+UUT Report
+Station ID:                   MCORW-52900007
+Serial Number:                60-0466-30012309A10008
+Date:                         Friday, September 29, 2023
+Time:                         9:25:13 PM
+Operator:                     administrator
+Execution Time:               825.2528806 seconds
+Number of Results:            145
+UUT Result:                   Error, UDP Multicast Open in FTC_SV2.lvlibp:UDP Multicast Write-Only Open.vi->FTC_SV2.lvlibp:KeepAwake_msg.vi->FTC_SV2.lvlibp:KeepAwake_msg.vi.ProxyCaller LabVIEW: (Hex 0x3C) The specified port or network address is currently in use. Select an available port or network address. [Error Code: 60, User-defined error code.]
+********************************************************************************
+
+Begin Sequence: MainSequence
+(C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+Select_ini_file:               Passed
+     Module Time:              1.6526131
+
+   Begin Sequence: Insert_Ini_file
+   (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+   open folder location:          Done
+        Exit Code:                0
+   Select ini file:               Done
+        Button Index:             1
+
+   End Sequence: Insert_Ini_file
+
+UDP_KeepAwake:                 Done
+     Module Time:              0.0008476
+UUT_info:                      Passed
+     Module Time:              0.1252886
+MES Setup:                     Passed
+     Module Time:              1.5033941
+Get Power Supply:              Passed
+     Module Time:              0.3249684
+Enable_TCU:                    Done
+     Module Time:              35.7272226
+
+   Begin Sequence: Enable_TCU
+   (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+   TurnOn_PowerSupply:            Passed
+        Module Time:              0.2410036
+   Wait:                          Done
+   Enable TCU:                    Done
+        Button Index:             1
+   Wait:                          Done
+   Enable_TCU:                    Skipped
+   STANDBY_CURRENT:               Passed
+        Module Time:              18.0023371
+
+      Begin Sequence: Wait and validate Power
+      (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+      STANDBY_CURRENT_1:             Passed
+           Measurement:              0.700031
+           Units:                    A
+           Limits:
+              Low:                   0.7
+              High:                  1.1
+           Comparison Type:          GELE (>= <=)
+
+      End Sequence: Wait and validate Power
+
+
+   End Sequence: Enable_TCU
+
+Initialize_Sensor:             Passed
+     Module Time:              16.7056856
+
+   Begin Sequence: Init_Sensor
+   (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+   Wait:                          Done
+   Open Communication x3:         Done
+        Module Time:              4.0402065
+   Activate_sensor:               Passed
+        Module Time:              9.6536486
+
+      Begin Sequence: Activate_sensor
+      (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+      Validate current value:        Passed
+           Module Time:              2.4687818
+
+         Begin Sequence: Wait and validate Power
+         (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+         OPERATION_CURRENT_STANDBY:     Passed
+              Measurement:              1.617895
+              Units:                    A
+              Limits:
+                 Low:                   1.5
+                 High:                  2.4
+              Comparison Type:          GELE (>= <=)
+
+         End Sequence: Wait and validate Power
+
+
+      End Sequence: Activate_sensor
+
+
+   End Sequence: Init_Sensor
+
+Envision:                      Done
+     Button Index:             1
+Verify_sensor:                 Passed
+     Module Time:              0.1758369
+
+   Begin Sequence: Verify sensor
+   (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+   Verify FW:                     Passed
+        Module Time:              0.1669368
+
+      Begin Sequence: Verify FW
+      (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+      HYDRA_VERSION:                 Done
+           vertex-9.4.0-dev-rc1.1-933600-0-ge445c69ab835
+      LASER_VERSION:                 Done
+           vertex-9.4.0-dev-rc1.1-933600-0-ge445c69ab835
+      SYSTEM_VERSION:                Done
+           vertex-9.4.0-dev-rc1.1-933600-0-ge445c69ab835
+      FPGA_VERSION:                  Done
+      FW_COMPARISON:                 Skipped
+
+      End Sequence: Verify FW
+
+
+   End Sequence: Verify sensor
+
+Pre_LPDC:                      Passed
+     Module Time:              458.3526028
+
+   Begin Sequence: Pre-LPDC
+   (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+   Thermal Stability:             Done
+        Button Index:             1
+   Wait:                          Done
+   UUT_info_reflectance:          Passed
+        Module Time:              0.0921581
+
+      Begin Sequence: UUT_info
+      (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+      Define report path:            Done
+      Create log file folder:        Done
+           Exit Code:                0
+      Define log file name:          Done
+      Load_tagfile_parameters:       Skipped
+      If:                            Skipped
+         CSV file creator:              Skipped
+         append_to file:                Skipped
+      Else:                          Skipped
+         time_stamp_population:         Skipped
+         time_stamp_2:                  Skipped
+         CSV file creator:              Skipped
+         append_to file:                Skipped
+         save_test_tag_version:         Skipped
+         save_station_version:          Skipped
+         save_time_stamp:               Skipped
+         update time_stamp:             Skipped
+      End:                           Skipped
+
+      End Sequence: UUT_info
+
+   Load Low power scan pattern:   Passed
+        Module Time:              30.6756633
+
+      Begin Sequence: Low power scan pattern
+      (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+      Create INI file:               Skipped
+      Load elevation ini:            Error
+           Error Message:            Operation Timed Out. [Error Code: -17402]
+           Exit Code:                0
+
+      End Sequence: Low power scan pattern
+
+   Wait:                          Done
+   Run_sensor:                    Passed
+        Module Time:              3.7788611
+
+      Begin Sequence: Run sensor
+      (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+         Config registers:              Skipped
+         Config FOV:                    Skipped
+         Config Laser Power:            Skipped
+         Config eclipses:               Skipped
+         Envision Screenshot:           Skipped
+         Pcap_capture:                  Passed
+              Module Time:              3.7395266
+
+      End Sequence: Run sensor
+
+   Wait:                          Done
+   Load High power scan pattern:  Passed
+        Module Time:              1.5929388
+
+      Begin Sequence: High power scan pattern
+      (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+      Create INI file:               Skipped
+      Load elevation ini:            Done
+           Exit Code:                0
+
+      End Sequence: High power scan pattern
+
+   Wait:                          Done
+   Pcap_collection_2:             Passed
+        Module Time:              4.4140583
+
+      Begin Sequence: Run sensor_2
+      (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+         Config registers:              Skipped
+         Config FOV:                    Skipped
+         Config Laser Power:            Skipped
+         Config eclipses:               Skipped
+         Envision Screenshot:           Skipped
+         Pcap_capture_2:                Passed
+              Module Time:              4.3794574
+
+      End Sequence: Run sensor_2
+
+   Pre LPDC Distance Reference:   Done
+        Button Index:             1
+   Wait:                          Done
+   Roic_dump:                     Passed
+        Module Time:              78.069345
+
+      Begin Sequence: Sensor_roic_dump
+      (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+      Wait:                          Done
+      Wait:                          Done
+      Call Executable:               Done
+           Exit Code:                0
+
+      End Sequence: Sensor_roic_dump
+
+
+   End Sequence: Pre-LPDC
+
+Power cycle:                   Passed
+     Module Time:              50.535135
+
+   Begin Sequence: power_cycle
+   (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+   Wait for sensor to Turn Off completely: Done
+   Enable TCU:                    Passed
+        Module Time:              26.0165869
+
+      Begin Sequence: Enable_TCU
+      (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+      TurnOn_PowerSupply:            Passed
+           Module Time:              0.2432105
+      Wait:                          Done
+      Enable TCU:                    Done
+           Button Index:             1
+      Wait:                          Done
+      Enable_TCU:                    Skipped
+      STANDBY_CURRENT:               Passed
+           Module Time:              8.7384466
+
+         Begin Sequence: Wait and validate Power
+         (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+         STANDBY_CURRENT_1:             Passed
+              Measurement:              0.7000529
+              Units:                    A
+              Limits:
+                 Low:                   0.7
+                 High:                  1.1
+              Comparison Type:          GELE (>= <=)
+
+         End Sequence: Wait and validate Power
+
+
+      End Sequence: Enable_TCU
+
+   Initialize_Sensor:             Passed
+        Module Time:              18.4641248
+
+      Begin Sequence: Init_Sensor_2
+      (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+      Wait:                          Done
+      Open Communication:            Passed
+           Module Time:              4.0874136
+      Activate_sensor:               Passed
+           Module Time:              3.4764885
+
+         Begin Sequence: Activate_sensor_2
+         (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+         ROIC info:                     Skipped
+         If:                            Skipped
+         End:                           Skipped
+
+         End Sequence: Activate_sensor_2
+
+      Wait:                          Done
+      Validate current value:        Passed
+           Module Time:              0.8760775
+
+         Begin Sequence: Wait and validate Power
+         (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+         OPERATION_CURRENT:             Passed
+              Measurement:              1.594962
+              Units:                    A
+              Limits:
+                 Low:                   1.5
+                 High:                  2.4
+              Comparison Type:          GELE (>= <=)
+
+         End Sequence: Wait and validate Power
+
+
+      End Sequence: Init_Sensor_2
+
+
+   End Sequence: power_cycle
+
+MAT:                           Passed
+     Module Time:              98.4127808
+
+   Begin Sequence: MATLAB_V2_RAW
+   (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+   Reset name strings:            Done
+   Call Executable:               Skipped
+   Run MAT script:                Done
+        Exit Code:                0
+   Wait:                          Done
+   Call Executable:               Done
+        Exit Code:                0
+   Find and store ini file:       Done
+        Exit Code:                0
+   Statement:                     Done
+   Load new ini file:             Done
+        Exit Code:                0
+   Wait:                          Done
+   Move ini file:                 Done
+        Exit Code:                0
+   Move new ini file:             Done
+        Exit Code:                0
+   Delete file:                   Done
+        Exit Code:                0
+
+   End Sequence: MATLAB_V2_RAW
+
+Post_LPDC:                     Terminated
+     Module Time:              147.7205394
+
+   Begin Sequence: Post_LPDC
+   (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+   Power cycle:                   Passed
+        Module Time:              53.9275917
+
+      Begin Sequence: power_cycle
+      (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+      Wait for sensor to Turn Off completely: Done
+      Enable TCU:                    Passed
+           Module Time:              29.5410117
+
+         Begin Sequence: Enable_TCU
+         (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+         TurnOn_PowerSupply:            Passed
+              Module Time:              0.2410216
+         Wait:                          Done
+         Enable TCU:                    Done
+              Button Index:             1
+         Wait:                          Done
+         Enable_TCU:                    Skipped
+         STANDBY_CURRENT:               Passed
+              Module Time:              11.4509471
+
+            Begin Sequence: Wait and validate Power
+            (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+            STANDBY_CURRENT_1:             Passed
+                 Measurement:              0.7001336
+                 Units:                    A
+                 Limits:
+                    Low:                   0.7
+                    High:                  1.1
+                 Comparison Type:          GELE (>= <=)
+
+            End Sequence: Wait and validate Power
+
+
+         End Sequence: Enable_TCU
+
+      Initialize_Sensor:             Passed
+           Module Time:              18.3337362
+
+         Begin Sequence: Init_Sensor_2
+         (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+         Wait:                          Done
+         Open Communication:            Passed
+              Module Time:              4.0707197
+         Activate_sensor:               Passed
+              Module Time:              3.432765
+
+            Begin Sequence: Activate_sensor_2
+            (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+            ROIC info:                     Skipped
+            If:                            Skipped
+            End:                           Skipped
+
+            End Sequence: Activate_sensor_2
+
+         Wait:                          Done
+         Validate current value:        Passed
+              Module Time:              0.8127956
+
+            Begin Sequence: Wait and validate Power
+            (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+            OPERATION_CURRENT:             Passed
+                 Measurement:              1.604918
+                 Units:                    A
+                 Limits:
+                    Low:                   1.5
+                    High:                  2.4
+                 Comparison Type:          GELE (>= <=)
+
+            End Sequence: Wait and validate Power
+
+
+         End Sequence: Init_Sensor_2
+
+
+      End Sequence: power_cycle
+
+   Verify_sensor:                 Passed
+        Module Time:              0.1779149
+
+      Begin Sequence: Verify sensor
+      (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+      Verify FW:                     Passed
+           Module Time:              0.1655586
+
+         Begin Sequence: Verify FW
+         (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+         HYDRA_VERSION:                 Done
+              vertex-9.4.0-dev-rc1.1-933600-0-ge445c69ab835
+         LASER_VERSION:                 Done
+              vertex-9.4.0-dev-rc1.1-933600-0-ge445c69ab835
+         SYSTEM_VERSION:                Done
+              vertex-9.4.0-dev-rc1.1-933600-0-ge445c69ab835
+         FPGA_VERSION:                  Done
+         FW_COMPARISON:                 Skipped
+
+         End Sequence: Verify FW
+
+
+      End Sequence: Verify sensor
+
+   Envision:                      Done
+        Button Index:             1
+   UUT_info_reflectance:          Skipped
+   Load Low power scan pattern:   Terminated
+        Module Time:              2.3502919
+
+      Begin Sequence: Low power scan pattern
+      (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+      Create INI file:               Skipped
+      Load elevation ini:            Terminated
+           Exit Code:                0
+
+      End Sequence: Low power scan pattern
+
+
+   End Sequence: Post_LPDC
+
+
+End Sequence: MainSequence
+
+End UUT Report
+

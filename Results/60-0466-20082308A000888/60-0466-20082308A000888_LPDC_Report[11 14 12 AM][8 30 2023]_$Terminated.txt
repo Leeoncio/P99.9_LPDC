@@ -1,0 +1,127 @@
+********************************************************************************
+UUT Report
+Station ID:                   MCORW-52900007
+Serial Number:                60-0466-20082308A000888
+Date:                         Wednesday, August 30, 2023
+Time:                         11:14:12 AM
+Operator:                     administrator
+Execution Time:               221.5380851 seconds
+Number of Results:            27
+UUT Result:                   Terminated
+********************************************************************************
+
+Begin Sequence: MainSequence
+(C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+UDP_KeepAwake:                 Done
+     Module Time:              0.0009548
+UUT_info:                      Passed
+     Module Time:              0.0910982
+MES Setup:                     Passed
+     Module Time:              0.1848316
+Get Power Supply:              Passed
+     Module Time:              0.1172947
+Enable_TCU:                    Done
+     Module Time:              79.3326978
+
+   Begin Sequence: Enable_TCU
+   (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+   TurnOn_PowerSupply:            Passed
+        Module Time:              0.2396523
+   Wait:                          Done
+   Enable TCU:                    Done
+        Button Index:             1
+   Wait:                          Done
+   Enable_TCU:                    Skipped
+   STANDBY_CURRENT:               Passed
+        Module Time:              0.3182976
+
+      Begin Sequence: Wait and validate Power
+      (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+      STANDBY_CURRENT_1:             Passed
+           Measurement:              0.7221746
+           Units:                    A
+           Limits:
+              Low:                   0.7
+              High:                  1.1
+           Comparison Type:          GELE (>= <=)
+
+      End Sequence: Wait and validate Power
+
+
+   End Sequence: Enable_TCU
+
+Initialize_Sensor:             Passed
+     Module Time:              16.6737598
+
+   Begin Sequence: Init_Sensor
+   (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+   Wait:                          Done
+   Open Communication x3:         Done
+        Module Time:              4.0257216
+   Activate_sensor:               Passed
+        Module Time:              9.6059844
+
+      Begin Sequence: Activate_sensor
+      (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+      Validate current value:        Passed
+           Module Time:              2.5316078
+
+         Begin Sequence: Wait and validate Power
+         (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+         OPERATION_CURRENT_STANDBY:     Passed
+              Measurement:              1.593824
+              Units:                    A
+              Limits:
+                 Low:                   1.5
+                 High:                  2.4
+              Comparison Type:          GELE (>= <=)
+
+         End Sequence: Wait and validate Power
+
+
+      End Sequence: Activate_sensor
+
+
+   End Sequence: Init_Sensor
+
+Envision:                      Done
+     Button Index:             1
+Verify_sensor:                 Passed
+     Module Time:              0.1792634
+
+   Begin Sequence: Verify sensor
+   (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+   Verify FW:                     Passed
+        Module Time:              0.1583022
+
+      Begin Sequence: Verify FW
+      (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+      HYDRA_VERSION:                 Done
+           vertex-9.2.0-dev-rc3-932600-0-g2e377120f43b
+      LASER_VERSION:                 Done
+           vertex-9.2.0-dev-rc3-932600-0-g2e377120f43b
+      SYSTEM_VERSION:                Done
+           vertex-9.2.0-dev-rc3-932600-0-g2e377120f43b
+      FPGA_VERSION:                  Done
+      FW_COMPARISON:                 Skipped
+
+      End Sequence: Verify FW
+
+
+   End Sequence: Verify sensor
+
+Call Executable:               Terminated
+     Exit Code:                0
+
+End Sequence: MainSequence
+
+End UUT Report
+

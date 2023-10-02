@@ -1,0 +1,25 @@
+hi status
+    Part num: ESFL-1550E126-2P
+  Serial num: H21360036
+Firmware Ver: EYD1A-2149B
+Factory Date: 2021.09.03
+   LSR_PUMP_STATUS = 0
+       Soft Enable =     0 Soft Request=     0  Cmd Enable = 0
+    Commanded mode = 6:OFF  Active mode = 6:OFF
+  Pump current DAC =     0  Request =     0  Config =   120
+     Power setting =    50 mW  Request =     0 mW  Config =    50 mW
+       Laser pulse = 2.000 ns  Request = 2.000 ns
+     Optical power =     0 mW   Measured power =234, ave=235 mW
+ Trigger Frequency = INF kHz  (0.000 uSec)
+      Control Mode = ACC (1)  Request = ACC (1)
+      TriggerPower = 1260  Request = 1260
+         LockPower = 1200  Request = 1200
+         DelayTime =    0  Request =    0
+   u16_d[0] =     0    i16_d[0] =      0
+   u16_d[1] =     0    i16_d[1] =      0
+   u16_d[2] =     0    i16_d[2] =      0
+   u16_d[3] =     0    i16_d[3] =    640
+   u16_d[4] =     0    i16_d[4] =      0
+   u16_d[5] =     0    i16_d[5] =      0
+  Module temperature = 28.949
+    Laser curr

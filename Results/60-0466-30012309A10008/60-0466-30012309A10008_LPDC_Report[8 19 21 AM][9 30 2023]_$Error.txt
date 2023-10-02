@@ -1,0 +1,243 @@
+********************************************************************************
+UUT Report
+Station ID:                   MCORW-52900007
+Serial Number:                60-0466-30012309A10008
+Date:                         Saturday, September 30, 2023
+Time:                         8:19:21 AM
+Operator:                     administrator
+Execution Time:               554.2104721 seconds
+Number of Results:            76
+UUT Result:                   Error, TCP Read in Telnet.lvlibp:Read Until String.vi->Telnet.lvlibp:CMD Read.vi->Telnet.lvlibp:CMD RW.vi->Telnet.lvlibp:CMD RW.vi.ProxyCaller LabVIEW: (Hex 0x42) The network connection was closed by the peer. If you are using the Open VI Reference function on a remote VI Server connection, verify that the machine is allowed access by selecting Tools>>Options>>VI Server on the server side. [Error Code: 66, User-defined error code.]
+********************************************************************************
+
+Begin Sequence: MainSequence
+(C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+Select_ini_file:               Passed
+     Module Time:              9.5113689
+
+   Begin Sequence: Insert_Ini_file
+   (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+   open folder location:          Done
+        Exit Code:                0
+   Select ini file:               Done
+        Button Index:             1
+
+   End Sequence: Insert_Ini_file
+
+UDP_KeepAwake:                 Done
+     Module Time:              0.0001438
+UUT_info:                      Passed
+     Module Time:              1.784398
+MES Setup:                     Passed
+     Module Time:              0.1262776
+Get Power Supply:              Passed
+     Module Time:              0.1735295
+Enable_TCU:                    Done
+     Module Time:              30.9033293
+
+   Begin Sequence: Enable_TCU
+   (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+   TurnOn_PowerSupply:            Passed
+        Module Time:              0.2303276
+   Wait:                          Done
+   Enable TCU:                    Done
+        Button Index:             1
+   Wait:                          Done
+   Enable_TCU:                    Skipped
+   STANDBY_CURRENT:               Passed
+        Module Time:              14.3406795
+
+      Begin Sequence: Wait and validate Power
+      (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+      STANDBY_CURRENT_1:             Passed
+           Measurement:              0.7003893
+           Units:                    A
+           Limits:
+              Low:                   0.7
+              High:                  1.1
+           Comparison Type:          GELE (>= <=)
+
+      End Sequence: Wait and validate Power
+
+
+   End Sequence: Enable_TCU
+
+Initialize_Sensor:             Passed
+     Module Time:              16.6704427
+
+   Begin Sequence: Init_Sensor
+   (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+   Wait:                          Done
+   Open Communication x3:         Done
+        Module Time:              4.0773112
+   Activate_sensor:               Passed
+        Module Time:              9.5799404
+
+      Begin Sequence: Activate_sensor
+      (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+      Validate current value:        Passed
+           Module Time:              2.4276786
+
+         Begin Sequence: Wait and validate Power
+         (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+         OPERATION_CURRENT_STANDBY:     Passed
+              Measurement:              1.600793
+              Units:                    A
+              Limits:
+                 Low:                   1.5
+                 High:                  2.4
+              Comparison Type:          GELE (>= <=)
+
+         End Sequence: Wait and validate Power
+
+
+      End Sequence: Activate_sensor
+
+
+   End Sequence: Init_Sensor
+
+Envision:                      Done
+     Button Index:             1
+Verify_sensor:                 Passed
+     Module Time:              0.1641483
+
+   Begin Sequence: Verify sensor
+   (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+   Verify FW:                     Passed
+        Module Time:              0.1534546
+
+      Begin Sequence: Verify FW
+      (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+      HYDRA_VERSION:                 Done
+           vertex-9.4.0-dev-rc1.1-933600-0-ge445c69ab835
+      LASER_VERSION:                 Done
+           vertex-9.4.0-dev-rc1.1-933600-0-ge445c69ab835
+      SYSTEM_VERSION:                Done
+           vertex-9.4.0-dev-rc1.1-933600-0-ge445c69ab835
+      FPGA_VERSION:                  Done
+      FW_COMPARISON:                 Skipped
+
+      End Sequence: Verify FW
+
+
+   End Sequence: Verify sensor
+
+Pre_LPDC:                      Terminated
+     Error Message:            TCP Read in Telnet.lvlibp:Read Until String.vi->Telnet.lvlibp:CMD Read.vi->Telnet.lvlibp:CMD RW.vi->Telnet.lvlibp:CMD RW.vi.ProxyCaller LabVIEW: (Hex 0x42) The network connection was closed by the peer. If you are using the Open VI Reference function on a remote VI Server connection, verify that the machine is allowed access by selecting Tools>>Options>>VI Server on the server side. [Error Code: 66]
+     Module Time:              474.5056509
+
+   Begin Sequence: Pre-LPDC
+   (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+   Thermal Stability:             Done
+        Button Index:             1
+   Wait:                          Done
+   UUT_info_reflectance:          Passed
+        Module Time:              0.1304488
+
+      Begin Sequence: UUT_info
+      (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+      Define report path:            Done
+      Create log file folder:        Done
+           Exit Code:                0
+      Define log file name:          Done
+      Load_tagfile_parameters:       Skipped
+      If:                            Skipped
+         CSV file creator:              Skipped
+         append_to file:                Skipped
+      Else:                          Skipped
+         time_stamp_population:         Skipped
+         time_stamp_2:                  Skipped
+         CSV file creator:              Skipped
+         append_to file:                Skipped
+         save_test_tag_version:         Skipped
+         save_station_version:          Skipped
+         save_time_stamp:               Skipped
+         update time_stamp:             Skipped
+      End:                           Skipped
+
+      End Sequence: UUT_info
+
+   Load Low power scan pattern:   Passed
+        Module Time:              3.2048433
+
+      Begin Sequence: Low power scan pattern
+      (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+      Create INI file:               Skipped
+      Load elevation ini:            Done
+           Exit Code:                0
+
+      End Sequence: Low power scan pattern
+
+   Wait:                          Done
+   Run_sensor:                    Passed
+        Module Time:              37.1328127
+
+      Begin Sequence: Run sensor
+      (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+         Config registers:              Skipped
+         Config FOV:                    Skipped
+         Config Laser Power:            Skipped
+         Config eclipses:               Skipped
+         Envision Screenshot:           Skipped
+         Pcap_capture:                  Passed
+              Module Time:              37.0750746
+
+      End Sequence: Run sensor
+
+   Wait:                          Done
+   Load High power scan pattern:  Passed
+        Module Time:              1.6106564
+
+      Begin Sequence: High power scan pattern
+      (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+      Create INI file:               Skipped
+      Load elevation ini:            Done
+           Exit Code:                0
+
+      End Sequence: High power scan pattern
+
+   Wait:                          Done
+   Pcap_collection_2:             Passed
+        Module Time:              11.9528986
+
+      Begin Sequence: Run sensor_2
+      (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+         Config registers:              Skipped
+         Config FOV:                    Skipped
+         Config Laser Power:            Skipped
+         Config eclipses:               Skipped
+         Envision Screenshot:           Skipped
+         Pcap_capture_2:                Passed
+              Module Time:              11.9040141
+
+      End Sequence: Run sensor_2
+
+   Pre LPDC Distance Reference:   Done
+        Button Index:             1
+   Wait:                          Done
+   Roic_dump:                     Terminated
+        Error Message:            TCP Read in Telnet.lvlibp:Read Until String.vi->Telnet.lvlibp:CMD Read.vi->Telnet.lvlibp:CMD RW.vi->Telnet.lvlibp:CMD RW.vi.ProxyCaller LabVIEW: (Hex 0x42) The network connection was closed by the peer. If you are using the Open VI Reference function on a remote VI Server connection, verify that the machine is allowed access by selecting Tools>>Options>>VI Server on the server side. [Error Code: 66]
+        Module Time:              29.8783874
+
+   End Sequence: Pre-LPDC
+
+
+End Sequence: MainSequence
+
+End UUT Report
+

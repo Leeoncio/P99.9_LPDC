@@ -1,0 +1,305 @@
+********************************************************************************
+UUT Report
+Station ID:                   L3LUMMFG161
+Serial Number:                60-0466-20082308A000444
+Date:                         Thursday, August 24, 2023
+Time:                         3:43:20 PM
+Operator:                     administrator
+Execution Time:               273.155032 seconds
+Number of Results:            78
+UUT Result:                   Passed
+********************************************************************************
+
+Begin Sequence: MainSequence
+(C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+UDP_KeepAwake:                 Done
+     Module Time:              0.000162
+UUT_info:                      Passed
+     Module Time:              0.0917411
+MES Setup:                     Passed
+     Module Time:              0.1303971
+Get Power Supply:              Passed
+     Module Time:              0.0641612
+Enable_TCU:                    Done
+     Module Time:              23.8454908
+
+   Begin Sequence: Enable_TCU
+   (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+   TurnOn_PowerSupply:            Passed
+        Module Time:              0.2562753
+   Wait:                          Done
+   Enable TCU:                    Done
+        Button Index:             1
+   Wait:                          Done
+   Enable_TCU:                    Skipped
+   STANDBY_CURRENT:               Passed
+        Module Time:              0.2953892
+
+      Begin Sequence: Wait and validate Power
+      (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+      STANDBY_CURRENT_1:             Passed
+           Measurement:              0.7028764
+           Units:                    A
+           Limits:
+              Low:                   0.7
+              High:                  1.1
+           Comparison Type:          GELE (>= <=)
+
+      End Sequence: Wait and validate Power
+
+
+   End Sequence: Enable_TCU
+
+Initialize_Sensor:             Passed
+     Module Time:              19.6252626
+
+   Begin Sequence: Init_Sensor
+   (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+   Wait:                          Done
+   Open Communication x3:         Done
+        Module Time:              6.9713268
+   Activate_sensor:               Passed
+        Module Time:              9.6231245
+
+      Begin Sequence: Activate_sensor
+      (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+      Validate current value:        Passed
+           Module Time:              2.4948418
+
+         Begin Sequence: Wait and validate Power
+         (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+         OPERATION_CURRENT_STANDBY:     Passed
+              Measurement:              1.582028
+              Units:                    A
+              Limits:
+                 Low:                   1.5
+                 High:                  2.4
+              Comparison Type:          GELE (>= <=)
+
+         End Sequence: Wait and validate Power
+
+
+      End Sequence: Activate_sensor
+
+
+   End Sequence: Init_Sensor
+
+Envision:                      Done
+     Button Index:             1
+Verify_sensor:                 Passed
+     Module Time:              0.164239
+
+   Begin Sequence: Verify sensor
+   (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+   Verify FW:                     Passed
+        Module Time:              0.1474446
+
+      Begin Sequence: Verify FW
+      (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+      HYDRA_VERSION:                 Done
+           vertex-9.2.0-dev-rc3-932600-0-g2e377120f43b
+      LASER_VERSION:                 Done
+           vertex-9.2.0-dev-rc3-932600-0-g2e377120f43b
+      SYSTEM_VERSION:                Done
+           vertex-9.2.0-dev-rc3-932600-0-g2e377120f43b
+      FPGA_VERSION:                  Done
+      FW_COMPARISON:                 Skipped
+
+      End Sequence: Verify FW
+
+
+   End Sequence: Verify sensor
+
+UUT_info_reflectance:          Passed
+     Module Time:              0.0868945
+
+   Begin Sequence: UUT_info
+   (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+   Define report path:            Done
+   Create log file folder:        Done
+        Exit Code:                0
+   Define log file name:          Done
+   Load_tagfile_parameters:       Skipped
+   If:                            Skipped
+      CSV file creator:              Skipped
+      append_to file:                Skipped
+   Else:                          Skipped
+      time_stamp_population:         Skipped
+      time_stamp_2:                  Skipped
+      CSV file creator:              Skipped
+      append_to file:                Skipped
+      save_test_tag_version:         Skipped
+      save_station_version:          Skipped
+      save_time_stamp:               Skipped
+      update time_stamp:             Skipped
+   End:                           Skipped
+
+   End Sequence: UUT_info
+
+Load Low power scan pattern:   Passed
+     Module Time:              1.7404066
+
+   Begin Sequence: Low power scan pattern
+   (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+   Create INI file:               Skipped
+   Load elevation ini:            Done
+        Exit Code:                0
+
+   End Sequence: Low power scan pattern
+
+Wait:                          Done
+Run_sensor:                    Passed
+     Module Time:              4.2855945
+
+   Begin Sequence: Run sensor
+   (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+      Config registers:              Skipped
+      Config FOV:                    Skipped
+      Config Laser Power:            Skipped
+      Config eclipses:               Skipped
+      Envision Screenshot:           Skipped
+      Pcap_capture:                  Passed
+           Module Time:              4.2397622
+
+   End Sequence: Run sensor
+
+Wait:                          Done
+Load High power scan pattern:  Passed
+     Module Time:              1.5919966
+
+   Begin Sequence: High power scan pattern
+   (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+   Create INI file:               Skipped
+   Load elevation ini:            Done
+        Exit Code:                0
+
+   End Sequence: High power scan pattern
+
+Wait:                          Done
+Pcap_collection_2:             Passed
+     Module Time:              4.2084885
+
+   Begin Sequence: Run sensor_2
+   (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+      Config registers:              Skipped
+      Config FOV:                    Skipped
+      Config Laser Power:            Skipped
+      Config eclipses:               Skipped
+      Envision Screenshot:           Skipped
+      Pcap_capture_2:                Passed
+           Module Time:              4.1481694
+
+   End Sequence: Run sensor_2
+
+Wait:                          Done
+Roic_dump:                     Passed
+     Module Time:              82.8385763
+
+   Begin Sequence: Sensor_roic_dump
+   (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+   Distance Reference:            Done
+        Button Index:             1
+
+   End Sequence: Sensor_roic_dump
+
+STANDBY_CURRENT:               Passed
+     Module Time:              0.2809752
+
+   Begin Sequence: Wait and validate Power
+   (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+   STANDBY_CURRENT_2:             Passed
+        Measurement:              0.9487337
+        Units:                    A
+        Limits:
+           Low:                   0.7
+           High:                  1.1
+        Comparison Type:          GELE (>= <=)
+
+   End Sequence: Wait and validate Power
+
+Stop_UDP_Multicast:            Done
+MES_Cleanup:                   Passed
+     Module Time:              0.2596173
+
+   Begin Sequence: MES_Cleanup
+   (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+   Get End Time:                  Passed
+        Module Time:              0.0377934
+   Get Test Result:               Passed
+        Module Time:              0.0442648
+      MES Generate XML:              Done
+           Module Time:              0.0121459
+   MES Values:                    Done
+        Header:
+           Ticket:                00000000000000000
+           SerialNumber:          60046620082308A000444
+           Station:               LPDC
+           TesterName:            L3LUMMFG161
+           User:                  CMXFTC
+           Result:                P
+           Description:           LPDC_SV2_L1
+        Results:
+           Results[0]:
+              Name:               FAMILY
+              ValueInStr:         Iris Slim
+              PassFailResult:     ''
+           Results[1]:
+              Name:               REVISION
+              ValueInStr:         V2
+              PassFailResult:     ''
+           Results[2]:
+              Name:               FIXTURE
+              ValueInStr:         TCU_001
+              PassFailResult:     ''
+           Results[3]:
+              Name:               SOCKET
+              ValueInStr:         001
+              PassFailResult:     ''
+           Results[4]:
+              Name:               SEQUENCE_NAME
+              ValueInStr:         LPDC.seq
+              PassFailResult:     ''
+           Results[5]:
+              Name:               START_TIME
+              ValueInStr:         2023-08-24-15-43-20
+              PassFailResult:     ''
+           Results[6]:
+              Name:               END_TIME
+              ValueInStr:         2023-08-24-15-47-52
+              PassFailResult:     ''
+           Results[7]:
+              Name:               STANDBY_CURRENT_1
+              ValueInStr:         0.7028764
+              PassFailResult:     Passed
+           Results[8]:
+              Name:               OPERATION_CURRENT_STANDBY
+              ValueInStr:         1.582028
+              PassFailResult:     Passed
+           Results[9]:
+              Name:               STANDBY_CURRENT_2
+              ValueInStr:         0.9487337
+              PassFailResult:     Passed
+
+   End Sequence: MES_Cleanup
+
+
+End Sequence: MainSequence
+
+End UUT Report
+

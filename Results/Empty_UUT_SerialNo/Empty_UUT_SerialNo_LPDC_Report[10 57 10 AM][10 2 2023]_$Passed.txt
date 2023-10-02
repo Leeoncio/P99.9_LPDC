@@ -1,0 +1,22 @@
+********************************************************************************
+UUT Report
+Station ID:                   MCORW-52900007
+Serial Number:                NONE
+Date:                         Monday, October 2, 2023
+Time:                         10:57:10 AM
+Operator:                     administrator
+Execution Time:               0.0262793 seconds
+Number of Results:            1
+UUT Result:                   Passed
+********************************************************************************
+
+Begin Sequence: Enable_TCU
+(C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+Enable_TCU:                    Skipped
+     Interactive Execution #:  1
+
+End Sequence: Enable_TCU
+
+End UUT Report
+

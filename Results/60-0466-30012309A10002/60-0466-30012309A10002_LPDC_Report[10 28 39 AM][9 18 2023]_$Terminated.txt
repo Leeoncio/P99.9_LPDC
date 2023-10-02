@@ -1,0 +1,56 @@
+********************************************************************************
+UUT Report
+Station ID:                   MCORW-52900007
+Serial Number:                60-0466-30012309A10002
+Date:                         Monday, September 18, 2023
+Time:                         10:28:39 AM
+Operator:                     administrator
+Execution Time:               20.6879528 seconds
+Number of Results:            12
+UUT Result:                   Terminated
+********************************************************************************
+
+Begin Sequence: MainSequence
+(C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+Select_ini_file:               Passed
+     Module Time:              1.7389911
+
+   Begin Sequence: Insert_Ini_file
+   (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+   open folder location:          Done
+        Exit Code:                0
+   Select ini file:               Done
+        Button Index:             1
+
+   End Sequence: Insert_Ini_file
+
+UDP_KeepAwake:                 Done
+     Module Time:              0.0001335
+UUT_info:                      Passed
+     Module Time:              0.0467691
+MES Setup:                     Passed
+     Module Time:              0.0139249
+Get Power Supply:              Passed
+     Module Time:              0.004161
+Enable_TCU:                    Terminated
+     Module Time:              18.6116759
+
+   Begin Sequence: Enable_TCU
+   (C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+   TurnOn_PowerSupply:            Passed
+        Module Time:              0.2274993
+   Wait:                          Done
+   Enable TCU:                    Done
+        Button Index:             1
+   Wait:                          Terminated
+
+   End Sequence: Enable_TCU
+
+
+End Sequence: MainSequence
+
+End UUT Report
+

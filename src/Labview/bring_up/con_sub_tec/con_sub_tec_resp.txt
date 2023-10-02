@@ -1,0 +1,75 @@
+con sub tec
+Subscribe mask = 0xd
+
+H1->
+[34.044]    TEC_TEMP_STATUS  RAW_DTS  ROIC_TEMP   ROIC_DUTY ROIC_SETPOINT   ROIC_STATE ROIC_MODE  RCVR_TEMP    RCVR_DUTY RCVR_SETPOINT RCVR_STATE RCVR_MODE  BASE_TEMP
+
+[34.044] ALL TEMPS OK        0x2d58   33.662 C      0.000%        34.000            0         3   26.000 C     -0.286%        27.937          2        2   23.937 C
+
+H1->
+[35.044] ALL TEMPS OK        0x2d65   34.122 C      0.000%        34.000            0         3   26.062 C      0.000%        28.000          0        2   24.000 C
+
+H1->
+[36.044] ALL TEMPS OK        0x2d5d   33.839 C      0.000%        34.000            0         3   26.125 C     -0.305%        28.000          2        2   24.000 C
+
+H1->
+[37.044] ALL TEMPS OK        0x2d59   33.697 C      0.000%        34.000            0         3   26.187 C     -0.444%        28.000          2        2   24.000 C
+
+H1->
+[38.044] ALL TEMPS OK        0x2d59   33.697 C      0.000%        34.000            0         3   26.250 C     -0.581%        28.000          2        2   24.000 C
+
+H1->
+[39.044] ALL TEMPS OK        0x2d5d   33.839 C      0.000%        34.000            0         3   26.250 C      0.000%        28.000          0        2   24.000 C
+
+H1->
+[40.044] ALL TEMPS OK        0x2d69   34.264 C      0.000%        34.000            0         3   26.312 C      0.000%        28.000          0        2   24.000 C
+
+H1->
+[41.044] ALL TEMPS OK        0x2d5e   33.875 C      0.000%        34.000            0         3   26.437 C     -1.170%        28.000          2        2   24.000 C
+
+H1->
+[42.044] ALL TEMPS OK        0x2d66   34.158 C      0.000%        34.000            0         3   26.437 C     -0.374%        28.000          2        2   24.000 C
+
+H1->
+[43.044] ALL TEMPS OK        0x2d66   34.158 C      0.000%        34.000            0         3   26.500 C      0.000%        28.062          0        2   24.062 C
+
+H1->
+[44.044] ALL TEMPS OK        0x2d66   34.158 C      0.000%        34.000            0         3   26.562 C     -0.213%        28.062          2        2   24.062 C
+
+H1->
+[45.044] ALL TEMPS OK        0x2d5e   33.875 C      0.000%        34.000            0         3   26.562 C      0.000%        28.062          0        2   24.062 C
+
+H1->
+[46.044] ALL TEMPS OK        0x2d6d   34.406 C      0.000%        34.000            0         3   26.625 C      0.000%        28.062          0        2   24.062 C
+
+H1->
+[47.044] ALL TEMPS OK        0x2d69   34.264 C      0.000%        34.000            0         3   26.687 C     -0.247%        28.062          2        2   24.062 C
+
+H1->
+[48.044] ALL TEMPS OK        0x2d71   34.547 C      0.000%        34.000            0         3   26.750 C     -0.494%        28.062          2        2   24.062 C
+
+H1->
+[49.044] ALL TEMPS OK        0x2d71   34.547 C      0.000%        34.000            0         3   26.750 C     -0.117%        28.125          2        2   24.125 C
+
+H1->
+[50.044] ALL TEMPS OK        0x2d71   34.547 C      0.000%        34.000            0         3   26.812 C     -0.100%        28.125          2        2   24.125 C
+
+H1->
+[51.044] ALL TEMPS OK        0x2d79   34.829 C     -1.958%        34.000            2         3   26.875 C     -0.344%        28.125          2        2   24.125 C
+
+H1->
+[52.044] ALL TEMPS OK        0x2d6a   34.299 C      0.000%        34.000            0         3   26.875 C      0.000%        28.125          0        2   24.125 C
+
+H1->
+[53.044] ALL TEMPS OK        0x2d69   34.264 C      0.000%        34.000            0         3   26.937 C     -0.120%        28.125          2        2   24.125 C
+
+H1->
+[54.044]    TEC_TEMP_STATUS  RAW_DTS  ROIC_TEMP   ROIC_DUTY ROIC_SETPOINT   ROIC_STATE ROIC_MODE  RCVR_TEMP    RCVR_DUTY RCVR_SETPOINT RCVR_STATE RCVR_MODE  BASE_TEMP
+
+[54.044] ALL TEMPS OK        0x2d7a   34.865 C     -8.801%        34.000            2         3   27.000 C     -0.477%        28.187          2        2   24.187 C
+
+H1->con unsub tec
+Subscribe mask = 0x9
+
+H1->
+

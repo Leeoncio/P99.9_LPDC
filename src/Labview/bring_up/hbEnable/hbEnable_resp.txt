@@ -1,0 +1,8 @@
+hi hb 1
+Illegal command: hi hb 1
+
+H1->exit
+Illegal command: exit
+
+H1->
+

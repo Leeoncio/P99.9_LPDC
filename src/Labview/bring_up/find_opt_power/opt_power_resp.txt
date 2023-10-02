@@ -1,0 +1,17 @@
+hi hb 1
+Heartbeat Data: Subscribed
+Heartbeat Headers: Subscribed
+[ 271.000]  PUMP_STAT EN RST  SAFE_EN  BRINGUP  BR_ACTIVE SoftEN SoftRq SoftCmd CURDAC CURRENT PWR_mW PWR_Req PWR_Cmd OPT_PWR ADC_PWR AVG_PWR PULSE FREQ_kHz MODE  LSR_TEMP_C Case_TEMP
+[ 271.000]  1->1       1   1 1&1=1->1  9:APC     9:APC         1      1       1    368   4.515     50       0      50     897     969     971 2.000  475.728  ACC  29.364 BAD    28.875
+[ 272.000]  1->1       1   1 1&1=1->1  9:APC     9:APC         1      1       1    368   4.515     50       0      50     896     972     971 2.000  475.728  ACC  29.364 BAD    28.875
+[ 273.000]  1->1       1   1 1&1=1->1  9:APC     9:APC         1      1       1    368   4.515     50       0      50     895     971     969 2.000  475.728  ACC  29.364 BAD    28.875
+[ 274.000]  1->1       1   1 1&1=1->1  9:APC     9:APC         1      1       1    368   4.515     50       0      50     894     971     968 2.000  480.392  ACC  29.364 BAD    28.937
+[ 275.000]  1->1       1   1 1&1=1->1  9:APC     9:APC         1      1       1    368   4.515     50       0      50     894     967     968 2.000  480.392  ACC  29.364 BAD    28.937
+[ 276.000]  1->1       1   1 1&1=1->1  9:APC     9:APC         1      1       1    368   4.515     50       0      50     893     968     967 2.000  480.392  ACC  29.364 BAD    28.937
+h
+L0->hi hb 0
+Heartbeat Data: Not Subscribed
+Heartbeat Headers: Not Subscribed
+
+L0->
+

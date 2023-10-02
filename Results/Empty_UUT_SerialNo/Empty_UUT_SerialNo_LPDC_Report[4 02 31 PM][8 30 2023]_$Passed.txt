@@ -1,0 +1,23 @@
+********************************************************************************
+UUT Report
+Station ID:                   MCORW-52900007
+Serial Number:                NONE
+Date:                         Wednesday, August 30, 2023
+Time:                         4:02:31 PM
+Operator:                     administrator
+Execution Time:               7.0717309 seconds
+Number of Results:            1
+UUT Result:                   Passed
+********************************************************************************
+
+Begin Sequence: MATLAB_V2_RAW
+(C:\luminartech\P99.9_LPDC\LPDC.seq)
+
+test:                          Done
+     Exit Code:                -1073741510
+     Interactive Execution #:  2
+
+End Sequence: MATLAB_V2_RAW
+
+End UUT Report
+
