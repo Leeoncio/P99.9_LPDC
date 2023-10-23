@@ -93,8 +93,8 @@ function lpdcPostCal()
     det1_t0_median = median(det1_t0);
 
     tdc2meters = 7.716E-11 / 1.000268502 * 299792458 / 2;
-    site_a_fixed_delay_offset = 0;
-    site_b_fixed_delay_offset = 0;
+    site_a_fixed_delay_offset = 12;
+    site_b_fixed_delay_offset = 8;
     det0_et0_rng = ((det0_range_median - det0_t0_median) * tdc2meters / 4) - (site_a_fixed_delay_offset * tdc2meters);
     det1_et0_rng = ((det1_range_median - det1_t0_median) * tdc2meters / 4) - (site_b_fixed_delay_offset * tdc2meters);
 

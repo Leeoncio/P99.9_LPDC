@@ -2,8 +2,8 @@
 <Category>,<PropertyLookup>,<Value>,,,
 {FileGlobals},Hardware {Container},,,,
 {FileGlobals},Hardware.TCU {LabVIEWIOControl},DeviceName {String},SessionNumber {Number},,
-{FileGlobals},{ContainerValues},ASRL5::INSTR,0,,
+{FileGlobals},{ContainerValues},ASRL7::INSTR,0,,
 {FileGlobals},DataTransfer {Container},ServerPath {String},domain {String},user {String},password {String}
-{FileGlobals},{ContainerValues},\\mco3-fs10.luminartech.com\Workgroups\iris-calib-captures\000_BSample\,,,
+{FileGlobals},{ContainerValues},\\mco3-fs10.luminartech.com\Workgroups\iris-calib-captures\000_B2-Iris+\,,,
 {FileGlobals},test_profile_path {Path},C:\luminartech\P11.7_GrayWall\cfg\TestProfie_GrayWall_SV2.csv,,,
 <PropertyGroup>,,,,,
